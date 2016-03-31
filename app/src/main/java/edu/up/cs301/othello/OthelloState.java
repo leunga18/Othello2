@@ -133,4 +133,46 @@ public class OthelloState extends GameState {
         return board[x][y];
     }
 
+    /**
+     * Checks to see if the piece placement is a valid, legal move
+     * @param x x coordinate
+     * @param y y coordinate
+     * @return True if placement is valid, False if placement is not valid.
+     */
+    public boolean validPiece(int x, int y) {
+        return true;
+    }
+
+    /**
+     * Flips the pieces that need to be flipped accordingly
+     * @param x x coordinate
+     * @param y y coordinate
+     */
+    public void flipPiece(int x, int y){
+
+    }
+
+    /**
+     * Checks the pieces that need to be flipped upon piece placement
+     * @param x x coordinate of placed piece
+     * @param y y coordinate of placed piece
+     */
+    public void checkFlipPieces(int x, int y){
+        //checks pieces that need to be flipped
+
+
+        //calls flipPiece method for pieces that needed to be flipped
+    }
+
+    /**
+     * Returns the number of pieces of the color given in the parameter
+     * @param color Color of piece that needs to be counted
+     * @return Number of pieces for the color
+     */
+    public int countPieces(int color){
+        return 1;
+    }
+
+
+
 }
