@@ -7,7 +7,7 @@ import edu.up.cs301.game.infoMsg.GameState;
  * @author Aaron Leung, Kieran Losh, Aaron Moehnke, Ryan Kane on 3/3/2016.
  * @version 3/14/2016
  */
-public class OthelloState extends GameState {
+public class OthelloState extends GameState{
 
 
     private int whiteCount;
