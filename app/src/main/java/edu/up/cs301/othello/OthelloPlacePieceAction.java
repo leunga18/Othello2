@@ -6,7 +6,7 @@ import edu.up.cs301.game.actionMsg.GameAction;
 /**
  * Created by losh18 on 3/31/2016.
  */
-public class PlacePieceAction extends GameAction {
+public class OthelloPlacePieceAction extends GameAction {
     private GamePlayer player;
     private int x;
     private int y;
@@ -15,7 +15,7 @@ public class PlacePieceAction extends GameAction {
      *
      * @param player the player who created the action
      */
-    public PlacePieceAction(GamePlayer player) {
+    public OthelloPlacePieceAction(GamePlayer player) {
         super(player);
     }
 }

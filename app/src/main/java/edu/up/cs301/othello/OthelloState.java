@@ -174,5 +174,13 @@ public class OthelloState extends GameState{
     }
 
 
+    /**
+     * Checks if the game is over
+     * @return index of the player who won,
+     *         -1 if game is not over
+     */
+    public int checkIfGameOver(){
+        return -1;
+    }
 
 }

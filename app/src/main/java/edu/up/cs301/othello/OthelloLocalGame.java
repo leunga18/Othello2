@@ -26,11 +26,27 @@ public class OthelloLocalGame extends LocalGame{
 
     @Override
     protected String checkIfGameOver() {
+        int playerIdx = os.checkIfGameOver();
         return null;
     }
 
     @Override
     protected boolean makeMove(GameAction action) {
+        if (action instanceof OthelloConfirmAction){
+            //check if correct player
+            //check if piece is placed
+            //flip pieces
+            //change player
+        }
+        else if (action instanceof OthelloPassAction){
+            //check if correct player
+            //change player
+        }
+        else if (action instanceof OthelloPlacePieceAction){
+            //check if correct player
+            //check if legal move
+            //place piece
+        }
         return false;
     }
 }
