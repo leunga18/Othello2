@@ -1,5 +1,7 @@
 package edu.up.cs301.othello;
 
+import edu.up.cs301.game.GameComputerPlayer;
+import edu.up.cs301.game.GameMainActivity;
 import edu.up.cs301.game.GamePlayer;
 import edu.up.cs301.game.infoMsg.GameInfo;
 
@@ -13,8 +15,18 @@ import edu.up.cs301.game.infoMsg.GameInfo;
  *
  * @date 30 March 2016
  */
-public abstract class OthelloComputerPlayer implements GamePlayer {
+public class OthelloComputerPlayer extends GameComputerPlayer {
 
-    protected abstract void receiveInfo(GameInfo info);
+    public OthelloComputerPlayer(String name) {
+        super(name);
+    }
 
+    @Override
+    protected void receiveInfo(GameInfo info) {
+
+    }
+
+    public boolean supportsGui() {
+        return false;
+    }
 }

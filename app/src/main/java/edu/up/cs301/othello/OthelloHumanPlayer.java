@@ -1,8 +1,11 @@
 package edu.up.cs301.othello;
 
+import android.app.Activity;
 import android.view.View;
 
 import edu.up.cs301.game.GameHumanPlayer;
+import edu.up.cs301.game.GameMainActivity;
+import edu.up.cs301.game.R;
 import edu.up.cs301.game.infoMsg.GameInfo;
 
 /**
@@ -15,7 +18,9 @@ import edu.up.cs301.game.infoMsg.GameInfo;
  *
  * @date 30 March 2016
  */
-public abstract class OthelloHumanPlayer extends GameHumanPlayer {
+public class OthelloHumanPlayer extends GameHumanPlayer {
+    protected OthelloState os;
+    private Activity myActivity;
     /**
      * constructor
      *
@@ -25,12 +30,25 @@ public abstract class OthelloHumanPlayer extends GameHumanPlayer {
         super(name);
     }
 
+    @Override
+    public View getTopView() {
+        return null;
+    }
+
+    @Override
+    public void receiveInfo(GameInfo info) {
+
+    }
+
+    public void setAsGui(GameMainActivity activity){
+        myActivity = activity;
+        activity.setContentView(R.layout.othello_layout);
+    }
     /**
      * Returns the GUI's top object; used for flashing.
      *
      * @return the GUI's top object.
      */
-    public abstract View getTopView();
 
     /**
      * Callback method, called when player gets a message
@@ -38,6 +56,5 @@ public abstract class OthelloHumanPlayer extends GameHumanPlayer {
      * @param info
      * 		the message
      */
-    public abstract void receiveInfo(GameInfo info);
 
 }

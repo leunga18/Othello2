@@ -6,9 +6,9 @@ ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:1:1-28:12
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:4:5-32
+		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:4:5-30
 	android:versionCode
-		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:3:5-29
+		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 	xmlns:android
