@@ -5,9 +5,16 @@ import android.view.View;
 import edu.up.cs301.game.infoMsg.GameInfo;
 
 /**
- * Created by AaronLeung on 3/30/16.
+ * Human player for Othello Game
+ *
+ * @author Aaron Leung
+ * @author Ryan Kane
+ * @author Kieran Losh
+ * @author Austin Moehnke
+ *
+ * @date 30 March 2016
  */
-public abstract class OthelloHumanPlayer implements GameHumanPlayer{
+public abstract class OthelloHumanPlayer implements GamePlayer{
     /**
      * Returns the GUI's top object; used for flashing.
      *
