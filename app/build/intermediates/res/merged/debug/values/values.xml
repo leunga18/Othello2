@@ -3,8 +3,19 @@
     <!-- From: file:/P:/CS301/Othello2/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="black">#000</color>
+    <!-- From: file:/P:/CS301/Othello2/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!-- From: file:/P:/CS301/Othello2/app/src/main/res/values/color.xml -->
+    <eat-comment/>
     <color name="green">#0F0</color>
     <color name="red">#ff0000</color>
+    <!-- From: file:/P:/CS301/Othello2/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
     <!-- From: file:/P:/CS301/Othello2/app/src/main/res/values/dimen.xml -->
     <eat-comment/>
     <dimen name="config_horiz_margin">20dp</dimen>

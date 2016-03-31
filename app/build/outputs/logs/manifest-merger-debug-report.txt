@@ -6,9 +6,9 @@ ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:1:1-28:12
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:4:5-30
+		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:4:5-32
 	android:versionCode
-		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:3:5-28
+		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 		INJECTED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml
 	xmlns:android
@@ -41,7 +41,7 @@ MERGED from [com.android.support:support-v4:21.0.0] P:\CS301\Othello2\app\build\
 		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:14:9-45
 	android:theme
 		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:16:9-40
-activity#edu.up.cs301.counter.CounterMainActivity
+activity#edu.up.cs301.othello.OthelloMainActivity
 ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:configChanges
 		ADDED from P:\CS301\Othello2\app\src\main\AndroidManifest.xml:19:13-83
