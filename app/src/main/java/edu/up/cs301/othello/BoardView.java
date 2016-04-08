@@ -31,7 +31,8 @@ public class BoardView extends SurfaceView implements View.OnTouchListener, View
     protected float height;
     protected float width;
     protected long downTime;
-    protected TextView counter = null;
+    protected TextView counterBottom = null;
+    protected TextView counterTop = null;
     protected Button confirmButton1 = null;
     protected Button confirmButton2 = null;
     protected int lastX = -1;
@@ -180,7 +181,7 @@ public class BoardView extends SurfaceView implements View.OnTouchListener, View
         //set last variable so we can remove the piece if another one is placed
         lastX = i;
         lastY = j;
-        counter.setText("" + i + ", " + j);
+        counterBottom.setText("" + i + ", " + j);
         //Log.i("board", "" + i + " " + j);
 
         //tell the board to redraw
@@ -193,10 +194,12 @@ public class BoardView extends SurfaceView implements View.OnTouchListener, View
     /**
      * setTextView takes a reference to a TextView so that the board can modify that view.
      * If it is not passed from main, BoardView cannot get a reference to the TextView.
-     * @param counter - reference to the TextView that will display the count
+     * @param counterBottom - reference to the TextView that will display the count for black
+     * @param counterTop - reference to the TextView the will display the white counter
      */
-    public void setTextView(TextView counter) {
-        this.counter = counter;
+    public void setTextView(TextView counterBottom, TextView counterTop) {
+        this.counterBottom = counterBottom;
+        this.counterTop = counterTop;
     }
 
     /**
@@ -216,16 +219,10 @@ public class BoardView extends SurfaceView implements View.OnTouchListener, View
      */
     public void onClick(View v) {
         //Black player presses their confirm button and it is their turn:
-        if (v.getId() == R.id.confirmButton && color == Piece.BLACK) {
-            //Log.i("Button1", "Clicked");
-            lastX = -1; //we don't want to overwrite the piece placed, so set the lastX = -1
-            color = Piece.WHITE;
+        if (v.getId() == R.id.confirmButton){
         }
         //White player presses their confirm button and it is their turn:
-        if (v.getId() == R.id.confirmTopButton && color == Piece.WHITE){
-            //Log.i("Button2", "Clicked");
-            lastX = -1;
-            color = Piece.BLACK;
+        if (v.getId() == R.id.confirmTopButton){
         }
     }
 }

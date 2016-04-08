@@ -28,16 +28,17 @@ public final class R {
     public static final class drawable {
         public static final int blank=0x7f020000;
         public static final int board=0x7f020001;
-        public static final int boardview=0x7f020002;
-        public static final int confirm=0x7f020003;
-        public static final int confirm_upside_down=0x7f020004;
-        public static final int ic_action_search=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int menu=0x7f020007;
-        public static final int menu_upside_down=0x7f020008;
-        public static final int othello_black_button=0x7f020009;
-        public static final int othello_white_button=0x7f02000a;
-        public static final int purple_delete_button=0x7f02000b;
+        public static final int board_flash=0x7f020002;
+        public static final int boardview=0x7f020003;
+        public static final int confirm=0x7f020004;
+        public static final int confirm_upside_down=0x7f020005;
+        public static final int ic_action_search=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int menu=0x7f020008;
+        public static final int menu_upside_down=0x7f020009;
+        public static final int othello_black_button=0x7f02000a;
+        public static final int othello_white_button=0x7f02000b;
+        public static final int purple_delete_button=0x7f02000c;
     }
     public static final class id {
         public static final int addPlayerButton=0x7f090014;
@@ -58,7 +59,7 @@ public final class R {
         public static final int menu_settings=0x7f090025;
         public static final int minusButton=0x7f090003;
         public static final int playGameButton=0x7f090008;
-        public static final int playerCount1=0x7f090023;
+        public static final int playerCountBottom=0x7f090023;
         public static final int playerNameEditText=0x7f090016;
         public static final int playerNameHeadingText=0x7f090012;
         public static final int playerTopCount=0x7f09001f;

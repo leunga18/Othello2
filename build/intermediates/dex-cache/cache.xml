@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-a3aaf9b905cb3f3a27e4d27df235b5e6f7077a4d.jar" />
-    </item>
-    <item
-        jar="/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/pre-dexed/debug/classes-d3fccfaccb1a6ab23cb1b8d3aeb16a9f3ecca3e9.jar" />
-    </item>
-    <item
-        jar="/Users/AaronLeung/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jar="C:\Program Files\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-1ba6fe6a22a563a3900ebb7643e8f78376bcde44.jar" />
+        <dex dex="C:\Users\losh18\Othello2\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-cd0bc13b74136e31c952ef8da9278e72a7f13ec8.jar" />
+    </item>
+    <item
+        jar="C:\Users\losh18\Othello2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="C:\Users\losh18\Othello2\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-5e805a1c1e9298feca4f5fd5b45d729acf6dc6aa.jar" />
+    </item>
+    <item
+        jar="C:\Users\losh18\Othello2\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="C:\Users\losh18\Othello2\app\build\intermediates\pre-dexed\debug\classes-5c847695ad74d2b72fb90d4cf70a789c1f9f83dc.jar" />
     </item>
 
 </items>

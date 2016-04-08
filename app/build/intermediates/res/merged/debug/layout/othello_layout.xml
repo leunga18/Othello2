@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.up.cs371.othello.othello"
-    android:id="@+id/top_gui_layout">
+    android:backgroundTint="#ffff0404"
+    android:backgroundTintMode="src_over">
 
     <LinearLayout
         android:orientation="vertical"
@@ -16,7 +17,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/board"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/top_gui_layout">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -112,7 +114,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="4"
-                    android:id="@+id/playerCount1"
+                    android:id="@+id/playerCountBottom"
                     android:layout_weight="1"
                     android:gravity="center_vertical|center_horizontal"
                     android:textSize="50sp"
@@ -137,4 +139,4 @@
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/Users/AaronLeung/Documents/University%20of%20Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/othello_layout.xml -->
+<!-- From: file:/C:/Users/losh18/Othello2/app/src/main/res/layout/othello_layout.xml -->

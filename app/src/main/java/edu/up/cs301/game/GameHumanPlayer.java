@@ -182,17 +182,13 @@ public abstract class GameHumanPlayer implements GamePlayer, Tickable {
 	 */
 	private static int getBackgroundColor(View v) {
 		 int color = Color.TRANSPARENT;
-         Drawable background = v.getBackground();
-         if (background instanceof ColorDrawable) {
-             color = ((ColorDrawable) background).getColor();
-         }
-         return color;
+		return color;
 	}
 
 	/**
 	 * Sends a 'state' object to the game's thread.
 	 * 
-	 * @param into
+	 * @param info
 	 * 		the information object to send
 	 */
 	public void sendInfo(GameInfo info) {
