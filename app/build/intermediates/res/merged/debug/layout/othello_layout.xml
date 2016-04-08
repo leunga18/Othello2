@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.up.cs371.othello.othello">
+    tools:context="edu.up.cs371.othello.othello"
+    android:id="@+id/top_gui_layout">
 
     <LinearLayout
         android:orientation="vertical"
@@ -70,7 +71,7 @@
 
         </LinearLayout>
 
-        <edu.up.cs371.othello.BoardView
+        <edu.up.cs301.othello.BoardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/boardView"
@@ -136,4 +137,4 @@
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/C:/Users/losh18/Othello2/app/src/main/res/layout/othello_layout.xml -->
+<!-- From: file:/Users/AaronLeung/Documents/University%20of%20Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/othello_layout.xml -->

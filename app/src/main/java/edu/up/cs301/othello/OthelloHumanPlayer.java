@@ -8,6 +8,7 @@ import android.widget.Button;
 import edu.up.cs301.game.GameHumanPlayer;
 import edu.up.cs301.game.GameMainActivity;
 import edu.up.cs301.game.R;
+import edu.up.cs301.game.actionMsg.GameAction;
 import edu.up.cs301.game.infoMsg.GameInfo;
 
 /**
@@ -68,6 +69,18 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     public void onClick(View v) {
+        if (game == null) return;
+
+        GameAction action = null;
+
+        if (v.getId() == R.id.confirmButton) {
+            action = new OthelloConfirmAction(this);
+        }
+        else {
+            return;
+        }
+
+        game.sendAction(action);
 
     }
 
