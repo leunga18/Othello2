@@ -53,4 +53,4 @@
         android:onClick="doFinish"
         android:text="Done" />
 
-</RelativeLayout><!-- From: file:/C:/Users/losh18/Othello2/app/src/main/res/layout/counter_human_player.xml -->
+</RelativeLayout><!-- From: file:/P:/CS301/Othello2/app/src/main/res/layout/counter_human_player.xml -->
