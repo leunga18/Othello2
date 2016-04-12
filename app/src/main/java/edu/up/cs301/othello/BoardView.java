@@ -5,15 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.SurfaceView;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
-import edu.up.cs301.game.R;
-import edu.up.cs301.othello.Piece;
 
 /**
  * @author Aaron Leung

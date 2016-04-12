@@ -61,4 +61,4 @@
         android:layout_height="wrap_content"
         android:text="@string/add_player" />
 
-</LinearLayout><!-- From: file:/P:/CS301/Othello2/app/src/main/res/layout/game_local_tab.xml -->
+</LinearLayout>

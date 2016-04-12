@@ -8,10 +8,12 @@ import edu.up.cs301.game.infoMsg.GameState;
  */
 public class OthelloState extends GameState {
 
-
     private int whiteCount = 2;
     private int blackCount = 2;
     private int[][] board = null;
+    private int[][] preBoard = null;
+    private boolean[][] justFlipped = null;
+    private boolean madeMove = false;
 
     //if turn == 1 White player turn
     //if turn == 0 Black player turn
@@ -28,9 +30,21 @@ public class OthelloState extends GameState {
         whiteCount = 2;
         blackCount = 2;
         board = new int[8][8];
+        preBoard = new int[8][8];
+        justFlipped = new boolean[8][8];
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
                 board[i][j] = EMPTY;
+            }
+        }
+        for (int i = 0; i < preBoard.length; i++){
+            for (int j = 0; j < preBoard[i].length; j++){
+                preBoard[i][j] = EMPTY;
+            }
+        }
+        for (int i = 0; i < justFlipped.length; i++){
+            for (int j = 0; j < justFlipped[i].length; j++){
+                justFlipped[i][j] = false;
             }
         }
         //starting layout
@@ -38,6 +52,7 @@ public class OthelloState extends GameState {
         board[4][3] = BLACK;
         board[3][4] = BLACK;
         board[4][4] = WHITE;
+        saveBoard();
     }
 
     /**
@@ -49,9 +64,21 @@ public class OthelloState extends GameState {
         this.whiteCount = o.getWhiteCount();
         this.blackCount = o.getBlackCount();
         board = new int[8][8];
+        preBoard = new int[8][8];
+        justFlipped = new boolean[8][8];
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
                 board[i][j] = o.getBoard()[i][j];
+            }
+        }
+        for (int i = 0; i < preBoard.length; i++){
+            for (int j = 0; j < preBoard[i].length; j++){
+                preBoard[i][j] = o.getPreBoard()[i][j];
+            }
+        }
+        for (int i = 0; i < justFlipped.length; i++){
+            for (int j = 0; j < justFlipped[i].length; j++){
+                justFlipped[i][j] = o.getJustFlipped()[i][j];
             }
         }
     }
@@ -67,6 +94,14 @@ public class OthelloState extends GameState {
 
     public int[][] getBoard() {
         return board;
+    }
+
+    public int[][] getPreBoard(){
+        return preBoard;
+    }
+
+    public boolean[][] getJustFlipped(){
+        return justFlipped;
     }
 
     public void setBoard(int[][] board) {
@@ -108,6 +143,48 @@ public class OthelloState extends GameState {
     }
 
     /**
+     * Give coordinates and if the piece was flipped return true
+     * @param x x coordinate
+     * @param y y coordinate
+     * @return if the piece was flipped this turn
+     */
+    public boolean getJustFlipped(int x, int y){
+        return justFlipped[x][y];
+    }
+
+    /**
+     * Ryan Kane
+     * saves the board array to preBoard
+     */
+    private void saveBoard(){
+        for (int i = 0; i < preBoard.length; i++){
+            for (int j = 0; j < preBoard[i].length; j++){
+                preBoard[i][j] = board[i][j];
+            }
+        }
+    }
+
+    /**
+     * Ryan Kane
+     * loads the preBoard to the board
+     */
+    private void loadBoard(){
+        for (int i = 0; i < board.length; i++){
+            for (int j = 0; j < board[i].length; j++){
+                board[i][j] = preBoard[i][j];
+            }
+        }
+    }
+
+    /**
+     * finalizes the move;
+     */
+    public void finalizeBoard(){
+        this.saveBoard();
+        madeMove = false;
+    }
+
+    /**
      * Ryan Kane
      * Places a piece at the coordinates if it is within the board bounds and the board exists
      * @param x x cord of the piece
@@ -116,6 +193,7 @@ public class OthelloState extends GameState {
      * @param wantflip: if you want this method to only test have flip = false
      * 			        if you want it to also flip the pieces flip = true
      * @return Number of pieces that will be flipped by making this move
+     * 0 = failure
      */
     public int placePiece(int x, int y, int pieceColor, boolean wantflip){
         //out of bounds
@@ -134,6 +212,13 @@ public class OthelloState extends GameState {
         if (pieceColor != BLACK && pieceColor != WHITE) {
             return 0;
         }
+        //loads the old board
+        if(madeMove == true && wantflip == true){
+            loadBoard();
+        }
+        else if (wantflip == true){
+            madeMove = true;
+        }
         //the placement will flip at least 1 piece
         if (checkFlipPieces(x,y,pieceColor, false) < 1){
             return 0;
@@ -142,6 +227,7 @@ public class OthelloState extends GameState {
         int temp = checkFlipPieces(x, y, pieceColor,wantflip);
         //this will flip the first piece if this is not a test
         if(wantflip == true){
+            justFlipped[x][y] = true;
             board[x][y] = pieceColor;
         }
         return temp;
@@ -215,6 +301,7 @@ public class OthelloState extends GameState {
             }
             if (piecesFlipped == 0){
                 if(wantflip == true){
+                    justFlipped[x][y]= true;
                     board[x][y] = origColor;
                 }
                 return 1;
@@ -222,6 +309,7 @@ public class OthelloState extends GameState {
             //a piece will be flipped
             else{
                 if(wantflip == true){
+                    justFlipped[x][y]= true;
                     board[x][y] = origColor;
                 }
                 return ++piecesFlipped;
@@ -324,14 +412,26 @@ public class OthelloState extends GameState {
      */
     private int countPieces(int color){
         int total = 0;
-        for(int i = 0; i < 7; i++){
-            for(int j = 0; j < 7; j++){
+        for(int i = 0; i < 8; i++){
+            for(int j = 0; j < 8; j++){
                 if(this.board[i][j] == color){
                     total++;
                 }
             }
         }
         return total;
+    }
+
+    /**
+     * sets the whole array of booleans to false
+     * Makes it so no pieces are in the justFlipped state
+     */
+    public void resetJustFlipped(){
+        for (int i = 0; i < justFlipped.length; i++){
+            for (int j = 0; j < justFlipped[i].length; j++){
+                justFlipped[i][j] = false;
+            }
+        }
     }
 
     /**
@@ -344,6 +444,8 @@ public class OthelloState extends GameState {
     public void forcePlacement(int x, int y, int color){
         board[x][y] = color;
     }
+
+
 }
 
 

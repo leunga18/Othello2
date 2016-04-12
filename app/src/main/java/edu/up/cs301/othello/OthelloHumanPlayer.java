@@ -39,6 +39,8 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private Activity myActivity;
     private BoardView board;
     private long downTime;
+    private int lastX;
+    private int lastY;
 
     /**
      * constructor
@@ -72,6 +74,8 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
             os = (OthelloState)info;
             board.setPieces(os.getBoard());
             board.invalidate();
+            lastX = -1;
+            lastY = -1;
         }
         if (info instanceof NotYourTurnInfo){
             flash(0xFFFF0000, 50);
@@ -90,34 +94,62 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     public boolean onTouch(View v, MotionEvent event) {
+        if (os == null){
+            return false;
+        }
         //only handle event from the boardView
         if (v.getId() == R.id.boardView){
-            //make sure that we only process one touch per drag (we don't want to spam placements)
-            if (event.getDownTime() == downTime){
-                //if it's the same press, ignore the event
-                return false;
+            //check to see if it's your turn
+            if (os.whoseTurn() == playerNum){
+                //make sure that we only process one touch per drag (we don't want to spam placements)
+                if (event.getDownTime() == downTime) {
+                    //if it's the same press, ignore the event
+                    return false;
+                }
+                downTime = event.getDownTime();
+
+                //generate a (i,j) location that corresponds to the place on the board that was touched
+                float x = event.getX();
+                float y = event.getY();
+
+                float width = board.getWidth();
+                float height = board.getHeight();
+
+                height /= 8.0f;
+                width /= 8.0f;
+
+                x /= width;
+                y /= height;
+
+                int i = (int) x;
+                int j = (int) y;
+
+                //generate a place piece action
+                GameAction place = null;
+                if (playerNum == 0) {
+                    if (os.placePiece(i, j, OthelloState.BLACK, true) == 0) {
+                        flash(0xFFFF0000, 100);
+                    } else {
+                        lastX = i;
+                        lastY = j;
+                    }
+                } else {
+                    if (os.placePiece(i, j, OthelloState.WHITE, true) == 0) {
+                        flash(0xFFFF0000, 100);
+                    } else {
+                        if (lastX != -1 && lastY != -1) {
+                            os.forcePlacement(lastX, lastY, OthelloState.WHITE);
+                        }
+                        os.forcePlacement(i, j, OthelloState.WHITE);
+                        lastX = i;
+                        lastY = j;
+                    }
+                }
+                board.invalidate();
             }
-            downTime = event.getDownTime();
-
-            //generate a (i,j) location that corresponds to the place on the board that was touched
-            float x = event.getX();
-            float y = event.getY();
-
-            float width = board.getWidth();
-            float height = board.getHeight();
-
-            height /= 8.0f;
-            width /= 8.0f;
-
-            x /= width;
-            y /= height;
-
-            int i = (int) x;
-            int j = (int) y;
-
-            //generate a place piece action
-            GameAction place = new OthelloPlacePieceAction(this, i, j);
-            game.sendAction(place);
+            else{
+                flash(0xFFFF0000, 100);
+            }
         }
         return false;
     }
@@ -128,17 +160,22 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         GameAction action = null;
 
         if (v.getId() == R.id.confirmButton) {
-            action = new OthelloConfirmAction(this);
-            getTopView().setBackgroundResource(R.drawable.board);
-            super.flash(0xFFFF0000, 100);
-            Log.i("HumanPlayer", "flash");
+            if (lastX != -1 && lastY != -1) {
+                action = new OthelloPlacePieceAction(this, lastX, lastY, getColor());
+                game.sendAction(action);
+            }
+            else {
+                flash(0xFFFF0000, 100);
+                Log.i("HumanPlayer", "flash");
+            }
         }
-        else {
-            return;
-        }
+    }
 
-        game.sendAction(action);
-
+    private int getColor(){
+        if (playerNum == 0)
+            return OthelloState.BLACK;
+        else
+            return OthelloState.WHITE;
     }
 
 
