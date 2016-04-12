@@ -322,7 +322,7 @@ public class OthelloState extends GameState {
     /**
      * Ryan Kane
      * Will tell the requester if the game needs to be ended or turn skipped
-     * 0 = no problems, inputed player can make a move
+     * 0 = no problems, inputted player can make a move
      * 1 = should skip turn
      * 2-4: End Game no player can make a move
      * 2 = black won
@@ -352,7 +352,7 @@ public class OthelloState extends GameState {
                 return 4;
             }
         }
-        //only given player cann't make a move
+        //only given player can't make a move
         return 1;
     }
 
@@ -362,7 +362,7 @@ public class OthelloState extends GameState {
      * @param playerColor
      * @return if given playerColor can make a move
      */
-    private boolean isPassNeeded(int playerColor){
+    public boolean isPassNeeded(int playerColor){
         int testScore = 0;
         //iterates through all possible moves
         for(int i = 0; i < 8; i++){

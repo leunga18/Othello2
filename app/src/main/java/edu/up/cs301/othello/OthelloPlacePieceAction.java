@@ -26,15 +26,6 @@ public class OthelloPlacePieceAction extends GameAction {
     }
 
     //Getters and Setters
-    @Override
-    public GamePlayer getPlayer() {
-        return player;
-    }
-
-    @Override
-    public void setPlayer(GamePlayer player) {
-        this.player = player;
-    }
 
     public int getX() {
         return x;

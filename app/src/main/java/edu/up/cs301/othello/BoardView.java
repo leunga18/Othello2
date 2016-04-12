@@ -113,39 +113,7 @@ public class BoardView extends SurfaceView {
 
 
     }
-/*    *//** @TODO remove this before final project
-     * onTouch handles the placement of pieces, it converts x,y inputs to i,j array values,
-     * then toggles the piece at i,j to be visible/invisible.
-     *//*
-    public boolean onTouch(View v, MotionEvent event) {
-        //make sure that we only process one touch per drag
-        if (event.getDownTime() == this.downTime){
-            //if it's the same press, ignore the touch event
-            return false;
-        }
-        this.downTime = event.getDownTime();
 
-        float x = event.getX();
-        float y = event.getY();
-
-        float width = this.getWidth();
-        float height = this.getHeight();
-
-        height = height/8.0f;
-        width = width/8.0f;
-
-        x /= width;
-        y /= height;
-
-        int i = (int) x;
-        int j = (int) y;
-
-
-        this.invalidate();
-
-
-        return true;
-    }*/
 
 
     //getters and setters

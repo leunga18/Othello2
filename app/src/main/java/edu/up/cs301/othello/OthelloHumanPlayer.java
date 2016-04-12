@@ -41,6 +41,13 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private long downTime;
     private int lastX;
     private int lastY;
+    private TextView counterBottom;
+    private TextView counterTop;
+    private Button confirmButton;
+
+
+
+    private int color;
 
     /**
      * constructor
@@ -49,6 +56,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
      */
     public OthelloHumanPlayer(String name) {
         super(name);
+
     }
 
 
@@ -73,9 +81,25 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         if (info instanceof OthelloState){
             os = (OthelloState)info;
             board.setPieces(os.getBoard());
+            if (playerNum == 0)
+                color = OthelloState.BLACK;
+            else
+                color = OthelloState.WHITE;
             board.invalidate();
             lastX = -1;
             lastY = -1;
+            os.updatePiecesCount();
+            counterBottom.setText("" + os.getBlackCount());
+            counterTop.setText("" + os.getWhiteCount());
+            if (os.whoseTurn() == playerNum){
+                //change the confirm button to pass button
+                if (!os.isPassNeeded(getColor())){
+                    confirmButton.setBackgroundResource(R.drawable.confirm_upside_down);
+                }
+                else{
+                    confirmButton.setBackgroundResource(R.drawable.confirm);
+                }
+            }
         }
         if (info instanceof NotYourTurnInfo){
             flash(0xFFFF0000, 50);
@@ -86,9 +110,9 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         myActivity = activity;
         activity.setContentView(R.layout.othello_layout);
         board = (BoardView)activity.findViewById(R.id.boardView);
-        Button confirmButton = (Button)activity.findViewById(R.id.confirmButton);
-        TextView counterBottom = (TextView)activity.findViewById(R.id.playerCountBottom);
-        TextView counterTop = (TextView)activity.findViewById(R.id.playerTopCount);
+        confirmButton = (Button)activity.findViewById(R.id.confirmButton);
+        counterBottom = (TextView)activity.findViewById(R.id.playerCountBottom);
+        counterTop = (TextView)activity.findViewById(R.id.playerTopCount);
         confirmButton.setOnClickListener(this);
         board.setOnTouchListener(this);
     }
@@ -137,15 +161,16 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                     if (os.placePiece(i, j, OthelloState.WHITE, true) == 0) {
                         flash(0xFFFF0000, 100);
                     } else {
-                        if (lastX != -1 && lastY != -1) {
-                            os.forcePlacement(lastX, lastY, OthelloState.WHITE);
-                        }
-                        os.forcePlacement(i, j, OthelloState.WHITE);
                         lastX = i;
                         lastY = j;
                     }
                 }
+                //redraw board
                 board.invalidate();
+                //recount pieces
+                os.updatePiecesCount();
+                counterBottom.setText("" + os.getBlackCount());
+                counterTop.setText("" + os.getWhiteCount());
             }
             else{
                 flash(0xFFFF0000, 100);
@@ -155,55 +180,47 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     public void onClick(View v) {
-        if (game == null) return;
-
+        if (game == null) {
+            flash(0xFFFF0000, 100);
+            return;
+        }
         GameAction action = null;
 
         if (v.getId() == R.id.confirmButton) {
+            //if a pass is needed, make the confirm button pass
+            if (!os.isPassNeeded(getColor())){
+                game.sendAction(new OthelloPassAction(this));
+                return;
+            }
             if (lastX != -1 && lastY != -1) {
                 action = new OthelloPlacePieceAction(this, lastX, lastY, getColor());
+                //action = new OthelloPassAction(this);
                 game.sendAction(action);
             }
             else {
+                /**
+                 * External Citation
+                 * Problem: Flash was not restoring the background to the original image
+                 * Resource:
+                 * http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
+                 * Solution: Set the background image again after the flash happens.
+                 *
+                 *
+                 * @TODO correct citation
+                 */
                 flash(0xFFFF0000, 100);
                 Log.i("HumanPlayer", "flash");
             }
         }
     }
 
-    private int getColor(){
-        if (playerNum == 0)
-            return OthelloState.BLACK;
-        else
-            return OthelloState.WHITE;
+    public void setColor(int color) {
+        this.color = color;
     }
 
-
-    /**
-     *
-     * @param color
-     * 			the color to flash
-     * @param ms
-     */
-//    @Override
-//    public void flash(int color, int ms){
-//        /**
-//         * External Citation
-//         * http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
-//         * @TODO add citation
-//         */
-//        View top = getTopView();
-//        top.setBackgroundResource(R.drawable.board_flash);
-//        board.invalidate();
-//        try{
-//            Thread.sleep(ms);
-//        }
-//        catch (InterruptedException ie){
-//            //don't care
-//        }
-//        top.setBackgroundColor(0x00000000);
-//
-//    }
+    private int getColor(){
+        return color;
+    }
 
 
 }

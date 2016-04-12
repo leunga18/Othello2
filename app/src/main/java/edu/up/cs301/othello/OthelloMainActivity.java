@@ -1,5 +1,7 @@
 package edu.up.cs301.othello;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
 import edu.up.cs301.game.GameMainActivity;
@@ -19,7 +21,7 @@ public class OthelloMainActivity extends GameMainActivity {
         ArrayList<GamePlayerType> playerTypes = new ArrayList<GamePlayerType>();
 
         // yellow-on-blue GUI
-        playerTypes.add(new GamePlayerType("Local Human Player (blue-yellow)") {
+        playerTypes.add(new GamePlayerType("Local Human Player") {
             public GamePlayer createPlayer(String name) {
                 return new OthelloHumanPlayer(name);
             }
@@ -28,10 +30,21 @@ public class OthelloMainActivity extends GameMainActivity {
         // dumb computer player
         playerTypes.add(new GamePlayerType("Computer Player (dumb)") {
             public GamePlayer createPlayer(String name) {
-                return new OthelloComputerPlayer(name) {
+                return new OthelloComputerPlayer(name, 0) {
                 };
             }
         });
+
+        playerTypes.add(new GamePlayerType("Computer Player (smart)") {
+            public GamePlayer createPlayer(String name) {
+                return new OthelloComputerPlayer(name, 1) {
+                };
+            }
+        });
+
+        if (playerTypes.get(1) == null || playerTypes.get(0) == null){
+            Log.i("Main", "player is null");
+        }
 
         // Create a game configuration class for Tic-tac-toe
         GameConfig defaultConfig = new GameConfig(playerTypes, 2,2, "Othello", PORT_NUMBER);
