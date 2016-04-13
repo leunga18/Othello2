@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.up.cs371.othello.othello"
+    tools:context="edu.up.cs301.othello.othello"
     android:backgroundTint="#ffff0404"
     android:backgroundTintMode="src_over">
 
@@ -29,10 +29,25 @@
                 android:layout_height="match_parent"
                 >
 
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menuTopButton"
+                    android:enabled="true"
+                    android:textSize="50sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:rotation="0"
+                    android:background="@drawable/menu_upside_down"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp" />
+
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="8"
+                    android:text="100"
                     android:id="@+id/playerTopCount"
                     android:layout_weight="1"
                     android:gravity="center_vertical|center_horizontal"
@@ -40,6 +55,20 @@
                     android:textColor="#FF000000"
                     android:layout_gravity="center" />
 
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/confirmTopButton"
+                    android:enabled="true"
+                    android:textSize="50sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/confirm_upside_down"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"/>
             </LinearLayout>
 
         </LinearLayout>
