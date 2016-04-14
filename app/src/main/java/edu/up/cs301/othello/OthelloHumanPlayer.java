@@ -43,8 +43,10 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private int lastY;
     private TextView counterBottom;
     private TextView counterTop;
+    private TextView turnText;
     private Button confirmButton;
-
+    private boolean hasNotMoved = true;
+    private boolean passNeeded = false;
 
 
     private int color;
@@ -79,27 +81,34 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     @Override
     public void receiveInfo(GameInfo info) {
         if (info instanceof OthelloState){
-            os = (OthelloState)info;
+            this.os = (OthelloState)info;
+            if (os.whoseTurn() == playerNum){
+                //change the confirm button to pass button
+                if (!os.isPassNeeded(getColor()) && hasNotMoved == true){
+                    confirmButton.setBackgroundResource(R.drawable.pass_button);
+                    passNeeded = true;
+                }
+                else{
+                    confirmButton.setBackgroundResource(R.drawable.confirm);
+                    passNeeded = false;
+                }
+            }
             board.setPieces(os.getBoard());
-            if (playerNum == 0)
-                color = OthelloState.BLACK;
-            else
-                color = OthelloState.WHITE;
+            color = getColor();
             board.invalidate();
             lastX = -1;
             lastY = -1;
             os.updatePiecesCount();
             counterBottom.setText("" + os.getBlackCount());
             counterTop.setText("" + os.getWhiteCount());
-            if (os.whoseTurn() == playerNum){
-                //change the confirm button to pass button
-                if (!os.isPassNeeded(getColor())){
-                    confirmButton.setBackgroundResource(R.drawable.pass_button);
-                }
-                else{
-                    confirmButton.setBackgroundResource(R.drawable.confirm);
-                }
+            String turnString;
+            if (os.whoseTurn() == 0){
+                turnString = "Black";
             }
+            else {
+                turnString = "White";
+            }
+            turnText.setText(turnString);
         }
         if (info instanceof NotYourTurnInfo){
             flash(0xFFFF0000, 50);
@@ -107,6 +116,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     public void setAsGui(GameMainActivity activity){
+
         myActivity = activity;
         activity.setContentView(R.layout.othello_layout);
         board = (BoardView)activity.findViewById(R.id.boardView);
@@ -115,6 +125,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         counterTop = (TextView)activity.findViewById(R.id.playerTopCount);
         confirmButton.setOnClickListener(this);
         board.setOnTouchListener(this);
+        turnText = (TextView)activity.findViewById(R.id.turnText);
     }
 
     public boolean onTouch(View v, MotionEvent event) {
@@ -154,15 +165,19 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                     if (os.placePiece(i, j, OthelloState.BLACK, true) == 0) {
                         flash(0xFFFF0000, 100);
                     } else {
-                        lastX = i;
-                        lastY = j;
+                        hasNotMoved = false;
+                        OthelloPlacePieceAction action = new OthelloPlacePieceAction(this, i, j, getColor());
+                        //action = new OthelloPassAction(this);
+                        game.sendAction(action);
                     }
                 } else {
                     if (os.placePiece(i, j, OthelloState.WHITE, true) == 0) {
                         flash(0xFFFF0000, 100);
                     } else {
-                        lastX = i;
-                        lastY = j;
+                        hasNotMoved = false;
+                        OthelloPlacePieceAction action = new OthelloPlacePieceAction(this, i, j, getColor());
+                        //action = new OthelloPassAction(this);
+                        game.sendAction(action);
                     }
                 }
                 //redraw board
@@ -171,6 +186,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                 os.updatePiecesCount();
                 counterBottom.setText("" + os.getBlackCount());
                 counterTop.setText("" + os.getWhiteCount());
+                //Log.i("HumanPlayer", "lastX: " + lastX + ", lastY: " + lastY);
             }
             else{
                 flash(0xFFFF0000, 100);
@@ -188,14 +204,17 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
 
         if (v.getId() == R.id.confirmButton) {
             //if a pass is needed, make the confirm button pass
-            if (!os.isPassNeeded(getColor())){
+            if (passNeeded){
+                Log.i("HumanPlayer", "Pass needed");
                 game.sendAction(new OthelloPassAction(this));
+                game.sendAction(new OthelloChangeTurnAction(this));
+                hasNotMoved = true;
                 return;
             }
-            if (lastX != -1 && lastY != -1) {
-                action = new OthelloPlacePieceAction(this, lastX, lastY, getColor());
-                //action = new OthelloPassAction(this);
-                game.sendAction(action);
+            else if (os.whoseTurn() == playerNum && !hasNotMoved){
+                game.sendAction(new OthelloConfirmAction(this));
+                game.sendAction(new OthelloChangeTurnAction(this));
+                hasNotMoved = true;
             }
             else {
                 /**
@@ -219,8 +238,13 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     private int getColor(){
+        if (playerNum == 0)
+            color = OthelloState.BLACK;
+        else
+            color = OthelloState.WHITE;
         return color;
     }
+
 
 
 }

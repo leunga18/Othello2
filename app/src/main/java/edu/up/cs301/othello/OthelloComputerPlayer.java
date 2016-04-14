@@ -24,6 +24,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
 
     protected OthelloState os;
     protected int AIType;
+    protected boolean hasMoved = false;
 
     /*
     @param name: name of the player
@@ -39,15 +40,11 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
     protected void receiveInfo(GameInfo info) {
         if (info instanceof OthelloState) {
             os = (OthelloState) info;
-            if (os.whoseTurn() == playerNum) {
-                //if the ai cannot move, it must pass
-                if (!os.isPassNeeded(getColor())){
-                       game.sendAction(new OthelloPassAction(this));
-                }
+            if (os.whoseTurn() == playerNum && !hasMoved) {
                 //make a move
-                else {
-                    makeMove(os);
-                }
+                makeMove(os);
+                game.sendAction(new OthelloChangeTurnAction(this));
+                hasMoved = false;
             }
         }
         if (info instanceof NotYourTurnInfo){
@@ -62,8 +59,9 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
      */
     public boolean makeMove(OthelloState state){
         //Temporarily delay the AI's response
+        hasMoved = true;
         try {
-            Thread.sleep(1000);
+            Thread.sleep(50);
         }
         catch (InterruptedException e) {
             //do nothing
@@ -82,8 +80,8 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
                 //AI is dumb (random)
                 if(AIType == 0 && testScore > 0){
                     spotsSeen++;
-                    int ranNum = (int)Math.random()*(spotsSeen);
-                    if(ranNum > (spotsSeen -2)){
+                    int ranNum = (int)(Math.random()*10000);
+                    if(ranNum < (10000/spotsSeen)){
                         xTarget = i;
                         yTarget = j;
                         maxScore = testScore;
@@ -102,9 +100,10 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
         }
         //if a move could be made, actually make the move
         if(maxScore > 0){
-            state.placePiece(xTarget, yTarget, getColor(), true);
-            state.finalizeBoard();
+            //state.placePiece(xTarget, yTarget, getColor(), true);
+            //state.finalizeBoard();
             game.sendAction(new OthelloPlacePieceAction(this, xTarget, yTarget, getColor()));
+            game.sendAction(new OthelloConfirmAction(this));
             return true;
         }
         //no move could be made, so pass
