@@ -63,22 +63,23 @@ public class OthelloState extends GameState {
         this.turn = o.whoseTurn();
         this.whiteCount = o.getWhiteCount();
         this.blackCount = o.getBlackCount();
-        board = new int[8][8];
-        preBoard = new int[8][8];
-        justFlipped = new boolean[8][8];
+        this.board = new int[8][8];
+        this.preBoard = new int[8][8];
+        this.justFlipped = new boolean[8][8];
+        this.madeMove = o.madeMove;
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
-                board[i][j] = o.getBoard()[i][j];
+                this.board[i][j] = o.getBoard()[i][j];
             }
         }
         for (int i = 0; i < preBoard.length; i++){
             for (int j = 0; j < preBoard[i].length; j++){
-                preBoard[i][j] = o.getPreBoard()[i][j];
+                this.preBoard[i][j] = o.getPreBoard()[i][j];
             }
         }
         for (int i = 0; i < justFlipped.length; i++){
             for (int j = 0; j < justFlipped[i].length; j++){
-                justFlipped[i][j] = o.getJustFlipped()[i][j];
+                this.justFlipped[i][j] = o.getJustFlipped()[i][j];
             }
         }
     }

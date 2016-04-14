@@ -63,7 +63,6 @@ public class OthelloLocalGame extends LocalGame {
         if (action instanceof OthelloPassAction) {
             //check if correct player
             if (canMove(os.whoseTurn())) {
-                    changeTurn();
                     sendAllUpdatedState();
                     return true;
             } else {
@@ -75,14 +74,20 @@ public class OthelloLocalGame extends LocalGame {
             if (canMove(getPlayerIdx(place.getPlayer()))) {
                 os.placePiece(place.getX(), place.getY(), place.getColor(), true);
                 Log.i("LocalGame", "" + place.getColor() + " placed at " + place.getX() + ", " + place.getY() + "");
-                changeTurn();
-                os.finalizeBoard();
-                sendAllUpdatedState();
+                place.getPlayer().sendInfo(new OthelloState(os));
                 return true;
             } else {
                 place.getPlayer().sendInfo(new NotYourTurnInfo());
             }
             //place piece
+        }
+        else if (action instanceof OthelloConfirmAction){
+            os.finalizeBoard();
+            sendAllUpdatedState();
+        }
+        else if (action instanceof OthelloChangeTurnAction){
+            changeTurn();
+            sendAllUpdatedState();
         }
         return false;
     }
