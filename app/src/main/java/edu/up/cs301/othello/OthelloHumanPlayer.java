@@ -94,7 +94,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
             if (os.whoseTurn() == playerNum){
                 //change the confirm button to pass button
                 if (!os.isPassNeeded(getColor())){
-                    confirmButton.setBackgroundResource(R.drawable.PassButton);
+                    confirmButton.setBackgroundResource(R.drawable.pass_button);
                 }
                 else{
                     confirmButton.setBackgroundResource(R.drawable.confirm);

@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/menu/game_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/menu/game_main.xml"
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\game_main.xml",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\menu\\game_main.xml"
+    },
+    {
+        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\game_main.xml",
+        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\menu\\game_main.xml"
     }
 ]

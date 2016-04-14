@@ -42,11 +42,11 @@ public class OthelloLocalGame extends LocalGame {
             case 0:
                 //game is proceeding normally
                 return null;
-            case 3:
-                //first player won
-                return "" + playerNames[0] + "won!";
             case 2:
-                //second player won
+                //first player won
+                return "" + playerNames[0] + " won!";
+            case 3:
+                //2nd player won
                 return "" + playerNames[1] + " won!";
             case 4:
                 //tie
