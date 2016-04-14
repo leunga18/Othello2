@@ -40,14 +40,8 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
         if (info instanceof OthelloState) {
             os = (OthelloState) info;
             if (os.whoseTurn() == playerNum) {
-                //if the ai cannot move, it must pass
-                if (!os.isPassNeeded(getColor())){
-                       game.sendAction(new OthelloPassAction(this));
-                }
                 //make a move
-                else {
-                    makeMove(os);
-                }
+                makeMove(os);
             }
         }
         if (info instanceof NotYourTurnInfo){
@@ -63,7 +57,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
     public boolean makeMove(OthelloState state){
         //Temporarily delay the AI's response
         try {
-            Thread.sleep(1000);
+            Thread.sleep(0);
         }
         catch (InterruptedException e) {
             //do nothing
@@ -82,8 +76,8 @@ public class OthelloComputerPlayer extends GameComputerPlayer {
                 //AI is dumb (random)
                 if(AIType == 0 && testScore > 0){
                     spotsSeen++;
-                    int ranNum = (int)Math.random()*(spotsSeen);
-                    if(ranNum > (spotsSeen -2)){
+                    int ranNum = (int)(Math.random()*10000);
+                    if(ranNum > (10000/spotsSeen)){
                         xTarget = i;
                         yTarget = j;
                         maxScore = testScore;

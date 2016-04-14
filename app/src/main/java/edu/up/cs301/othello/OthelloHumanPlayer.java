@@ -79,18 +79,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     @Override
     public void receiveInfo(GameInfo info) {
         if (info instanceof OthelloState){
-            os = (OthelloState)info;
-            board.setPieces(os.getBoard());
-            if (playerNum == 0)
-                color = OthelloState.BLACK;
-            else
-                color = OthelloState.WHITE;
-            board.invalidate();
-            lastX = -1;
-            lastY = -1;
-            os.updatePiecesCount();
-            counterBottom.setText("" + os.getBlackCount());
-            counterTop.setText("" + os.getWhiteCount());
+            this.os = (OthelloState)info;
             if (os.whoseTurn() == playerNum){
                 //change the confirm button to pass button
                 if (!os.isPassNeeded(getColor())){
@@ -100,6 +89,14 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                     confirmButton.setBackgroundResource(R.drawable.confirm);
                 }
             }
+            board.setPieces(os.getBoard());
+            color = getColor();
+            board.invalidate();
+            lastX = -1;
+            lastY = -1;
+            os.updatePiecesCount();
+            counterBottom.setText("" + os.getBlackCount());
+            counterTop.setText("" + os.getWhiteCount());
         }
         if (info instanceof NotYourTurnInfo){
             flash(0xFFFF0000, 50);
@@ -171,6 +168,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                 os.updatePiecesCount();
                 counterBottom.setText("" + os.getBlackCount());
                 counterTop.setText("" + os.getWhiteCount());
+                Log.i("HumanPlayer", "lastX: " + lastX + ", lastY: " + lastY);
             }
             else{
                 flash(0xFFFF0000, 100);
@@ -189,6 +187,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         if (v.getId() == R.id.confirmButton) {
             //if a pass is needed, make the confirm button pass
             if (!os.isPassNeeded(getColor())){
+                Log.i("HumanPlayer", "Pass needed");
                 game.sendAction(new OthelloPassAction(this));
                 return;
             }
@@ -219,6 +218,10 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     private int getColor(){
+        if (playerNum == 0)
+            color = OthelloState.BLACK;
+        else
+            color = OthelloState.WHITE;
         return color;
     }
 

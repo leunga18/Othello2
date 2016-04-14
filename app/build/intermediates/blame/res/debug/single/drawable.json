@@ -1,19 +1,19 @@
 [
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\boardview.jpg",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\boardview.jpg"
-    },
-    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\board.jpg",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\board.jpg"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_black_button.png",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\othello_black_button.png"
-    },
-    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_white_button.png",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\othello_white_button.png"
+    },
+    {
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_upside_down.png",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu_upside_down.png"
+    },
+    {
+        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
+        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm.png"
     },
     {
         "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
@@ -24,20 +24,28 @@
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\othello_white_button.png"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blank.png",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\blank.png"
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\board.jpg",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\board.jpg"
     },
     {
-        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
-        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm.png"
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\boardview.jpg",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\boardview.jpg"
+    },
+    {
+        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass_landscape.png",
+        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\pass_landscape.png"
     },
     {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_black_button.png",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\othello_black_button.png"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_upside_down.png",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm_upside_down.png"
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.png",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu.png"
+    },
+    {
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blank.png",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\blank.png"
     },
     {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\boardview.jpg",
@@ -48,6 +56,10 @@
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm_upside_down.png"
     },
     {
+        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass_button.png",
+        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\pass_button.png"
+    },
+    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_upside_down.png",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu_upside_down.png"
     },
@@ -56,16 +68,12 @@
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\blank.png"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.png",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu.png"
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_black_button.png",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\othello_black_button.png"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_upside_down.png",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu_upside_down.png"
-    },
-    {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\board.jpg",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\board.jpg"
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_upside_down.png",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm_upside_down.png"
     },
     {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.png",
