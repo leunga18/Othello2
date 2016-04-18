@@ -41,8 +41,6 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private Activity myActivity;
     private BoardView board;
     private long downTime;
-    private int lastX;
-    private int lastY;
     private TextView counterBottom;
     private TextView counterTop;
     private ImageView turnImage;
@@ -85,8 +83,12 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         if (info instanceof OthelloState){
             this.os = (OthelloState)info;
             if (os.whoseTurn() == playerNum){
+                //if a move hasn't been made, change the confirm button to be greyed out
+                if (hasNotMoved){
+                    confirmButton.setBackgroundResource(R.drawable.confirm_grey);
+                }
                 //change the confirm button to pass button
-                if (!os.isPassNeeded(getColor()) && hasNotMoved == true){
+                else if (!os.isPassNeeded(getColor()) && hasNotMoved == true){
                     confirmButton.setBackgroundResource(R.drawable.pass_button);
                     passNeeded = true;
                 }
@@ -98,8 +100,6 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
             board.setPieces(os.getBoard());
             color = getColor();
             board.invalidate();
-            lastX = -1;
-            lastY = -1;
             os.updatePiecesCount();
             counterBottom.setText("" + os.getBlackCount());
             counterTop.setText("" + os.getWhiteCount());
