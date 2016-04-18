@@ -17,7 +17,7 @@ import android.view.SurfaceView;
  * and draws them on its canvas. The board handles touch inputs and the presses of the confirm button.
  *
  */
-public class BoardView extends SurfaceView {
+public class BoardView extends SurfaceView{
 
     protected int pieces[][];
 
