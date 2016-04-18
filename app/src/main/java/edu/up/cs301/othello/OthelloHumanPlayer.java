@@ -16,6 +16,7 @@ import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 
 import edu.up.cs301.game.GameHumanPlayer;
 import edu.up.cs301.game.GameMainActivity;
@@ -34,7 +35,8 @@ import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
  *
  * @date 30 March 2016
  */
-public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchListener, View.OnClickListener{
+public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchListener, View.OnClickListener, Serializable{
+    private static final long serialVersionUID = 504182016l;
     protected OthelloState os;
     private Activity myActivity;
     private BoardView board;
@@ -43,7 +45,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private int lastY;
     private TextView counterBottom;
     private TextView counterTop;
-    private TextView turnText;
+    private ImageView turnImage;
     private Button confirmButton;
     private boolean hasNotMoved = true;
     private boolean passNeeded = false;
@@ -101,14 +103,12 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
             os.updatePiecesCount();
             counterBottom.setText("" + os.getBlackCount());
             counterTop.setText("" + os.getWhiteCount());
-            String turnString;
             if (os.whoseTurn() == 0){
-                turnString = "Black";
+                turnImage.setImageResource(R.drawable.turn_black);
             }
             else {
-                turnString = "White";
+                turnImage.setImageResource(R.drawable.turn_white);
             }
-            turnText.setText(turnString);
         }
         if (info instanceof NotYourTurnInfo){
             flash(0xFFFF0000, 50);
@@ -125,7 +125,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         counterTop = (TextView)activity.findViewById(R.id.playerTopCount);
         confirmButton.setOnClickListener(this);
         board.setOnTouchListener(this);
-        turnText = (TextView)activity.findViewById(R.id.turnText);
+        turnImage = (ImageView)activity.findViewById(R.id.turnImage);
     }
 
     public boolean onTouch(View v, MotionEvent event) {
@@ -163,7 +163,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                 GameAction place = null;
                 if (playerNum == 0) {
                     if (os.placePiece(i, j, OthelloState.BLACK, true) == 0) {
-                        flash(0xFFFF0000, 100);
+                        flash(0xFFFF9900, 100);
                     } else {
                         hasNotMoved = false;
                         OthelloPlacePieceAction action = new OthelloPlacePieceAction(this, i, j, getColor());
@@ -172,7 +172,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                     }
                 } else {
                     if (os.placePiece(i, j, OthelloState.WHITE, true) == 0) {
-                        flash(0xFFFF0000, 100);
+                        flash(0xFFFF9900, 100);
                     } else {
                         hasNotMoved = false;
                         OthelloPlacePieceAction action = new OthelloPlacePieceAction(this, i, j, getColor());
@@ -219,16 +219,16 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
             else {
                 /**
                  * External Citation
-                 * Problem: Flash was not restoring the background to the original image
-                 * Resource:
-                 * http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
-                 * Solution: Set the background image again after the flash happens.
+                 *  Date: 4/10/2016
+                 *  Problem: Flash was not restoring the background to the original image
+                 *  Resource:
+                 *      http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
+                 *  Solution: Set the background image again after the flash happens.
                  *
                  *
                  * @TODO correct citation
                  */
                 flash(0xFFFF0000, 100);
-                Log.i("HumanPlayer", "flash");
             }
         }
     }

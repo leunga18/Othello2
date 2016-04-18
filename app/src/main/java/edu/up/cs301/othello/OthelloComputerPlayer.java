@@ -2,6 +2,8 @@ package edu.up.cs301.othello;
 
 import android.util.Log;
 
+import java.io.Serializable;
+
 import edu.up.cs301.game.GameComputerPlayer;
 import edu.up.cs301.game.GameMainActivity;
 import edu.up.cs301.game.GamePlayer;
@@ -18,9 +20,9 @@ import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
  *
  * @date 30 March 2016
  */
-public class OthelloComputerPlayer extends GameComputerPlayer {
+public class OthelloComputerPlayer extends GameComputerPlayer implements Serializable{
 
-
+    private static final long serialVersionUID = 304182016l;
 
     protected OthelloState os;
     protected int AIType;

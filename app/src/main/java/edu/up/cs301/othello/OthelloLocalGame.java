@@ -2,6 +2,8 @@ package edu.up.cs301.othello;
 
 import android.util.Log;
 
+import java.io.Serializable;
+
 import edu.up.cs301.game.GamePlayer;
 import edu.up.cs301.game.LocalGame;
 import edu.up.cs301.game.actionMsg.GameAction;
@@ -10,7 +12,9 @@ import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 /**
  * Created by losh18 on 3/31/2016.
  */
-public class OthelloLocalGame extends LocalGame {
+public class OthelloLocalGame extends LocalGame implements Serializable {
+    private static final long serialVersionUID = 604182016l;
+
     private OthelloState os;
 
     public OthelloLocalGame() {
@@ -59,13 +63,13 @@ public class OthelloLocalGame extends LocalGame {
 
     @Override
     protected boolean makeMove(GameAction action) {
-        Log.i("action", action.getClass().toString());
+        //Log.i("action", action.getClass().toString());
         if (action instanceof OthelloPassAction) {
             //check if correct player
             if (canMove(os.whoseTurn())) {
                     sendAllUpdatedState();
                     return true;
-            } else {
+            } else { //not the correct player
                 action.getPlayer().sendInfo(new NotYourTurnInfo());
             }
         } else if (action instanceof OthelloPlacePieceAction) {
@@ -73,7 +77,7 @@ public class OthelloLocalGame extends LocalGame {
             OthelloPlacePieceAction place = (OthelloPlacePieceAction) action;
             if (canMove(getPlayerIdx(place.getPlayer()))) {
                 os.placePiece(place.getX(), place.getY(), place.getColor(), true);
-                Log.i("LocalGame", "" + place.getColor() + " placed at " + place.getX() + ", " + place.getY() + "");
+                //Log.i("LocalGame", "" + place.getColor() + " placed at " + place.getX() + ", " + place.getY() + "");
                 place.getPlayer().sendInfo(new OthelloState(os));
                 return true;
             } else {
@@ -92,15 +96,16 @@ public class OthelloLocalGame extends LocalGame {
         return false;
     }
 
+    //changes turn
     public void changeTurn(){
-        Log.i("LocalGame", "Current Turn: " + os.whoseTurn());
+        //Log.i("LocalGame", "Current Turn: " + os.whoseTurn());
         if (os.whoseTurn() == 0){
             os.setTurn(1);
         }
         else if (os.whoseTurn() == 1){
             os.setTurn(0);
         }
-        Log.i("LocalGame", "Next Turn: " + os.whoseTurn());
+        //Log.i("LocalGame", "Next Turn: " + os.whoseTurn());
     }
 
 }

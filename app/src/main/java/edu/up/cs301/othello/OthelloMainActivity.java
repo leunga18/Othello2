@@ -2,6 +2,7 @@ package edu.up.cs301.othello;
 
 import android.util.Log;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import edu.up.cs301.game.GameMainActivity;
@@ -13,7 +14,9 @@ import edu.up.cs301.game.config.GamePlayerType;
 /**
  * Created by losh18 on 3/31/2016.
  */
-public class OthelloMainActivity extends GameMainActivity {
+public class OthelloMainActivity extends GameMainActivity implements Serializable{
+    private static final long serialVersionUID = 704182016l;
+
     public static final int PORT_NUMBER = 15555;
     @Override
     public GameConfig createDefaultConfig() {

@@ -7,6 +7,8 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
+import java.io.Serializable;
+
 /**
  * @author Aaron Leung
  * @author Ryan Kane
@@ -17,10 +19,10 @@ import android.view.SurfaceView;
  * and draws them on its canvas. The board handles touch inputs and the presses of the confirm button.
  *
  */
-public class BoardView extends SurfaceView{
+public class BoardView extends SurfaceView implements Serializable{
 
     protected int pieces[][];
-
+    private static final long serialVersionUID = 104182016l;
 
     /**
      * Constructors

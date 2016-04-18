@@ -1,12 +1,16 @@
 package edu.up.cs301.othello;
 
+import java.io.Serializable;
+
 import edu.up.cs301.game.GamePlayer;
 import edu.up.cs301.game.actionMsg.GameAction;
 
 /**
  * Created by losh18 on 3/31/2016.
  */
-public class OthelloConfirmAction extends GameAction{
+public class OthelloConfirmAction extends GameAction implements Serializable{
+    private static final long serialVersionUID = 404182016l;
+
     /**
      * constructor for GameAction
      *

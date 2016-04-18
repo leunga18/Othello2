@@ -1,5 +1,9 @@
 [
     {
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\othello_layout.xml",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout-land\\othello_layout.xml"
+    },
+    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\counter_human_player.xml",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\layout-land\\counter_human_player.xml"
     },
@@ -8,11 +12,15 @@
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\layout-land\\othello_layout.xml"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\othello_layout.xml",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout-land\\othello_layout.xml"
-    },
-    {
         "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\counter_human_player.xml",
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout-land\\counter_human_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\othello_layout.xml",
+        "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout-land\\othello_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\counter_human_player.xml",
+        "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout-land\\counter_human_player.xml"
     }
 ]

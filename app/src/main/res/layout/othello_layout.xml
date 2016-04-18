@@ -29,17 +29,16 @@
                 android:layout_height="match_parent"
                 >
 
-                <TextView
+                <ImageView
                     android:layout_width="60dp"
-                    android:layout_height="fill_parent"
-                    android:text="New Text"
-                    android:id="@+id/turnText"
+                    android:layout_height="match_parent"
+                    android:id="@+id/turnImage"
                     android:layout_weight="1"
-                    android:textSize="48dp"
-                    android:gravity="center" />
+                    android:src="@drawable/turn_waiting"
+                    android:layout_marginLeft="15dp" />
 
                 <TextView
-                    android:layout_width="100dp"
+                    android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:text="8"
                     android:id="@+id/playerTopCount"
@@ -49,10 +48,9 @@
                     android:textColor="#FF000000"
                     android:layout_gravity="center" />
 
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/textBonus"
+                <Space
+                    android:layout_width="72.5dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
 
             </LinearLayout>
