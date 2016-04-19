@@ -23,10 +23,25 @@ import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 public class OthelloComputerPlayer extends GameComputerPlayer implements Serializable{
 
     private static final long serialVersionUID = 304182016l;
-
+    private int AIDelay = 0;
     protected OthelloState os;
     protected int AIType;
     protected boolean hasMoved = false;
+
+    /*
+     * getters and setters self explanatory
+     */
+    public void setAIDelay(int newDelay){
+        AIDelay = newDelay;
+    }
+
+    public void setAIType(int newType){
+        AIType = newType;
+    }
+
+    public int getAIType(){
+        return AIType;
+    }
 
     /*
     @param name: name of the player
@@ -50,7 +65,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
             }
         }
         if (info instanceof NotYourTurnInfo){
-            Log.i("ComputerPlayer", "played out of turn");
+            //Log.i("ComputerPlayer", "played out of turn");
         }
     }
 
@@ -63,7 +78,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
         //Temporarily delay the AI's response
         hasMoved = true;
         try {
-            Thread.sleep(50);
+            Thread.sleep(AIDelay);
         }
         catch (InterruptedException e) {
             //do nothing

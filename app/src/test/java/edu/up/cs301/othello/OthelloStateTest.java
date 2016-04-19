@@ -65,26 +65,26 @@ public class OthelloStateTest {
     @Test //test a valid piece placement
     public void testValidPlacePiece(){
         OthelloState o = new OthelloState();
-        assertEquals(true, o.placePiece(0,0,OthelloState.BLACK));
+        assertEquals(true, o.placePiece(0,0,OthelloState.BLACK, false));
     }
 
     @Test //test piece placement if the board isn't initialized
     public void testInvalidPlacePieceNoBoard(){
         OthelloState o = new OthelloState();
         o.setBoard(null);
-        assertEquals(false, o.placePiece(0,0,OthelloState.BLACK));
+        assertEquals(false, o.placePiece(0,0,OthelloState.BLACK, false));
     }
 
     @Test //test piece placement if the location is out of bounds
     public void testInvalidPlacePieceOutOfBounds(){
         OthelloState o = new OthelloState();
-        assertEquals(false, o.placePiece(-1,-1, OthelloState.BLACK));
+        assertEquals(false, o.placePiece(-1,-1, OthelloState.BLACK, false));
     }
 
     @Test //test piece placement if the piece color is location
     public void testInvalidPlacePieceInvalidColor(){
         OthelloState o = new OthelloState();
-        assertEquals(false, o.placePiece(0, 0, 5));
+        assertEquals(false, o.placePiece(0, 0, 5, false));
     }
 
     @Test //test piece getting if the location is valid

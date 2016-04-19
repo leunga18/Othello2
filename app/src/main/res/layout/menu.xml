@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="375dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Game"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:textSize="48dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart AI"
+                android:id="@+id/aiCheckBox"
+                android:layout_gravity="center_horizontal"
+                android:textSize="48dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#FFFFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Delay"
+                android:id="@+id/aiDelayText"
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"
+                android:textSize="48dp"
+                android:textColor="#ffffff"
+                android:singleLine="true" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aiDelaySeekBar"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

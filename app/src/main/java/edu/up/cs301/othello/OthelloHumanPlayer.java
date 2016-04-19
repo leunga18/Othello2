@@ -1,6 +1,7 @@
 package edu.up.cs301.othello;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -45,6 +46,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private TextView counterTop;
     private ImageView turnImage;
     private Button confirmButton;
+    private Button menuButton;
     private boolean hasNotMoved = true;
     private boolean passNeeded = false;
 
@@ -118,11 +120,15 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     public void setAsGui(GameMainActivity activity){
 
         myActivity = activity;
+        //lock to portrait location
         activity.setContentView(R.layout.othello_layout);
+        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         board = (BoardView)activity.findViewById(R.id.boardView);
         confirmButton = (Button)activity.findViewById(R.id.confirmButton);
         counterBottom = (TextView)activity.findViewById(R.id.playerCountBottom);
         counterTop = (TextView)activity.findViewById(R.id.playerTopCount);
+        menuButton = (Button)activity.findViewById(R.id.menuButton);
+        menuButton.setOnClickListener(this);
         confirmButton.setOnClickListener(this);
         board.setOnTouchListener(this);
         turnImage = (ImageView)activity.findViewById(R.id.turnImage);
@@ -196,7 +202,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     }
 
     public void onClick(View v) {
-        if (game == null) {
+        if (game == null || v == null || os == null){
             flash(0xFFFF0000, 100);
             return;
         }
@@ -205,7 +211,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         if (v.getId() == R.id.confirmButton) {
             //if a pass is needed, make the confirm button pass
             if (passNeeded){
-                Log.i("HumanPlayer", "Pass needed");
+                //Log.i("HumanPlayer", "Pass needed");
                 game.sendAction(new OthelloPassAction(this));
                 game.sendAction(new OthelloChangeTurnAction(this));
                 hasNotMoved = true;
@@ -230,6 +236,10 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                  */
                 flash(0xFFFF0000, 100);
             }
+        }
+        else if (v.getId() == R.id.menuButton){
+            myActivity.setContentView(R.layout.menu);
+            Log.i("HumanPlayer","menu button clicked");
         }
     }
 

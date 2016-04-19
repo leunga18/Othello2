@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\menu\\game_main.xml",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\menu\\game_main.xml"
+    },
+    {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\game_main.xml",
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\menu\\game_main.xml"
     },

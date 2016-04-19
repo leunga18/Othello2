@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
     },
