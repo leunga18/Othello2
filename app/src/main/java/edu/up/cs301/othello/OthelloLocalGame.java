@@ -99,7 +99,7 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
             sendAllUpdatedState();
         }
         else if (action instanceof OthelloChangeAITypeAction){
-            Log.i("LocalGame", "Action ai type: " + ((OthelloChangeAITypeAction) action).getType() + " OS AI type: " + os.getAiType());
+            // Log.i("LocalGame", "Action ai type: " + ((OthelloChangeAITypeAction) action).getType() + " OS AI type: " + os.getAiType());
             os.setAiType(((OthelloChangeAITypeAction) action).getType());
             os.setAiTypeChanged(true);
             sendAllUpdatedState();

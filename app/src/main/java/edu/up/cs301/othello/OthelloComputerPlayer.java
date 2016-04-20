@@ -65,7 +65,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
         if (info instanceof OthelloState) {
             os = (OthelloState) info;
             AIDelay = os.getDelay();
-            Log.i("ComputerPlayer", "AI Type: " + AIType);
+
             if (os.isAiTypeChanged()){
                 AIType = os.getAiType();
             }
@@ -112,6 +112,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
                     //AI is dumb (random)
                     if (AIType == 0) {
                         spotsSeen++;
+                        ranNum = (int) (Math.random() * 10000);
                         if (ranNum < (10000 / spotsSeen)) {
                             xTarget = i;
                             yTarget = j;

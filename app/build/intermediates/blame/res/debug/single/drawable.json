@@ -12,24 +12,24 @@
         "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\board_flipped.jpg"
     },
     {
-        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass_landscape.png",
-        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\pass_landscape.png"
-    },
-    {
         "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_upside_down.png",
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu_upside_down.png"
     },
     {
-        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_grey.png",
-        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\confirm_grey.png"
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass_landscape.png",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\pass_landscape.png"
+    },
+    {
+        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\boardview.jpg",
+        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\boardview.jpg"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\restart_button.png",
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\drawable\\restart_button.png"
     },
     {
-        "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\boardview.jpg",
-        "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\boardview.jpg"
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_grey.png",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\confirm_grey.png"
     },
     {
         "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\quit_button.png",

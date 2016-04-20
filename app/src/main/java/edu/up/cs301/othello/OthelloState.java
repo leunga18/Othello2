@@ -35,7 +35,7 @@ public class OthelloState extends GameState implements Serializable{
     public OthelloState(){
         aiTypeChanged = false;
         aiType = 0;
-        delay = 15;
+        delay = 500;
         turn = 0;
         whiteCount = 2;
         blackCount = 2;

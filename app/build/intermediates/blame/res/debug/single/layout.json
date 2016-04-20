@@ -16,12 +16,12 @@
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
     },
     {
-        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_no_gui.xml"
-    },
-    {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_no_gui.xml"
     },
     {
         "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
@@ -50,6 +50,10 @@
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
