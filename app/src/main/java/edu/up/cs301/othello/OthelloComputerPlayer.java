@@ -23,14 +23,20 @@ import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 public class OthelloComputerPlayer extends GameComputerPlayer implements Serializable{
 
     private static final long serialVersionUID = 304182016l;
+
     private int AIDelay = 0;
     protected OthelloState os;
     protected int AIType;
     protected boolean hasMoved = false;
+    protected boolean firstRun = true;
 
     /*
      * getters and setters self explanatory
      */
+    public int getAIDelay() {
+        return AIDelay;
+    }
+
     public void setAIDelay(int newDelay){
         AIDelay = newDelay;
     }
@@ -50,6 +56,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
     public OthelloComputerPlayer(String name, int type) {
         super(name);
         this.AIType = type;
+        firstRun = true;
     }
 
 
@@ -57,6 +64,12 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
     protected void receiveInfo(GameInfo info) {
         if (info instanceof OthelloState) {
             os = (OthelloState) info;
+            AIDelay = os.getDelay();
+            Log.i("ComputerPlayer", "AI Type: " + AIType);
+            if (os.isAiTypeChanged()){
+                AIType = os.getAiType();
+            }
+
             if (os.whoseTurn() == playerNum && !hasMoved) {
                 //make a move
                 makeMove(os);
@@ -90,27 +103,37 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
         //stores testing Variable
         int testScore = 0;
         int spotsSeen = 0;
+        int ranNum = (int) (Math.random() * 10000);
         //iterates through all possible moves
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
                 testScore = state.placePiece(i,j, getColor(), false);
-                //AI is dumb (random)
-                if(AIType == 0 && testScore > 0){
-                    spotsSeen++;
-                    int ranNum = (int)(Math.random()*10000);
-                    if(ranNum < (10000/spotsSeen)){
-                        xTarget = i;
-                        yTarget = j;
-                        maxScore = testScore;
+                if(testScore > 0) {
+                    //AI is dumb (random)
+                    if (AIType == 0) {
+                        spotsSeen++;
+                        if (ranNum < (10000 / spotsSeen)) {
+                            xTarget = i;
+                            yTarget = j;
+                            maxScore = testScore;
+                        }
                     }
-                }
-                else{
                     //AI is "smart"
-                    //if this move gives a higher gain, store it as the new "best move"
-                    if(maxScore < testScore && AIType == 1){
-                        xTarget = i;
-                        yTarget = j;
-                        maxScore = testScore;
+                    else {
+                        //if the move is on the outskirts of the board
+                        //the move is made more favorable
+                        if(i == 0 || i == 7){
+                            testScore++;
+                        }
+                        if(j == 0 || j == 7){
+                            testScore++;
+                        }
+                        //if this move gives a higher gain, store it as the new "best move"
+                        if (maxScore < testScore && AIType == 1) {
+                            xTarget = i;
+                            yTarget = j;
+                            maxScore = testScore;
+                        }
                     }
                 }
             }

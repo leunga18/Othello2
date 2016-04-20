@@ -12,6 +12,9 @@ public class OthelloState extends GameState implements Serializable{
     private static final long serialVersionUID = 1004182016l;
 
 
+    private boolean aiTypeChanged;
+    private int aiType;
+    private int delay;
     private int whiteCount = 2;
     private int blackCount = 2;
     private int[][] board = null;
@@ -29,7 +32,10 @@ public class OthelloState extends GameState implements Serializable{
     /**
      * Constructor
      */
-    public OthelloState() {
+    public OthelloState(){
+        aiTypeChanged = false;
+        aiType = 0;
+        delay = 15;
         turn = 0;
         whiteCount = 2;
         blackCount = 2;
@@ -64,6 +70,9 @@ public class OthelloState extends GameState implements Serializable{
      * @param o OthelloState to copy from
      */
     public OthelloState(OthelloState o){
+        this.aiTypeChanged = o.isAiTypeChanged();
+        this.aiType = o.getAiType();
+        this.delay = o.delay;
         this.turn = o.whoseTurn();
         this.whiteCount = o.getWhiteCount();
         this.blackCount = o.getBlackCount();
@@ -127,6 +136,31 @@ public class OthelloState extends GameState implements Serializable{
 
     public void setBlackCount(int blackCount) {
         this.blackCount = blackCount;
+    }
+
+    public int getDelay() {
+        return delay;
+    }
+
+    public void setDelay(int delay) {
+        this.delay = delay;
+    }
+
+    public boolean isAiTypeChanged() {
+        return aiTypeChanged;
+    }
+
+    public void setAiTypeChanged(boolean aiTypeChanged) {
+        this.aiTypeChanged = aiTypeChanged;
+    }
+
+
+    public int getAiType() {
+        return aiType;
+    }
+
+    public void setAiType(int aiType) {
+        this.aiType = aiType;
     }
 
     /**

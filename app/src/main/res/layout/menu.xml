@@ -21,20 +21,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reset Game"
-                android:id="@+id/button"
-                android:layout_gravity="center_horizontal"
-                android:textSize="48dp" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Smart AI"
-                android:id="@+id/aiCheckBox"
+                android:id="@+id/resetButton"
                 android:layout_gravity="center_horizontal"
                 android:textSize="48dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:textColor="#FFFFFFFF" />
+                android:layout_marginBottom="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dumb AI"
+                    android:id="@+id/dumbButton"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="48dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart AI"
+                    android:id="@+id/smartButton"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="48dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -53,6 +69,16 @@
                 android:id="@+id/aiDelaySeekBar"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back to Game"
+                android:id="@+id/backButton"
+                android:textColor="#FFFFFFFF"
+                android:textSize="56dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="30dp" />
 
         </LinearLayout>
     </FrameLayout>

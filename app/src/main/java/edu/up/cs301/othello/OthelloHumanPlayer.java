@@ -10,7 +10,10 @@ import android.view.InputEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -26,6 +29,8 @@ import edu.up.cs301.game.actionMsg.GameAction;
 import edu.up.cs301.game.infoMsg.GameInfo;
 import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 
+//@TODO remove commented out debugging logging
+
 /**
  * Human player for Othello Game
  *
@@ -36,7 +41,7 @@ import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
  *
  * @date 30 March 2016
  */
-public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchListener, View.OnClickListener, Serializable{
+public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchListener, View.OnClickListener, SeekBar.OnSeekBarChangeListener, Serializable{
     private static final long serialVersionUID = 504182016l;
     protected OthelloState os;
     private Activity myActivity;
@@ -49,6 +54,11 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
     private Button menuButton;
     private boolean hasNotMoved = true;
     private boolean passNeeded = false;
+    private Button smartButton;
+    private Button dumbButton;
+    private Button resetButton;
+    private SeekBar aiSeekBar;
+    private Button backButton;
 
 
     private int color;
@@ -121,17 +131,22 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
 
         myActivity = activity;
         //lock to portrait location
-        activity.setContentView(R.layout.othello_layout);
-        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        board = (BoardView)activity.findViewById(R.id.boardView);
-        confirmButton = (Button)activity.findViewById(R.id.confirmButton);
-        counterBottom = (TextView)activity.findViewById(R.id.playerCountBottom);
-        counterTop = (TextView)activity.findViewById(R.id.playerTopCount);
-        menuButton = (Button)activity.findViewById(R.id.menuButton);
+        initializeViews();
+    }
+
+    private void initializeViews(){
+        myActivity.setContentView(R.layout.othello_layout);
+        myActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        board = (BoardView)myActivity.findViewById(R.id.boardView);
+        confirmButton = (Button)myActivity.findViewById(R.id.confirmButton);
+        counterBottom = (TextView)myActivity.findViewById(R.id.playerCountBottom);
+        counterTop = (TextView)myActivity.findViewById(R.id.playerTopCount);
+        menuButton = (Button)myActivity.findViewById(R.id.menuButton);
         menuButton.setOnClickListener(this);
         confirmButton.setOnClickListener(this);
         board.setOnTouchListener(this);
-        turnImage = (ImageView)activity.findViewById(R.id.turnImage);
+        turnImage = (ImageView)myActivity.findViewById(R.id.turnImage);
+        board.invalidate();
     }
 
     public boolean onTouch(View v, MotionEvent event) {
@@ -239,7 +254,41 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         }
         else if (v.getId() == R.id.menuButton){
             myActivity.setContentView(R.layout.menu);
-            Log.i("HumanPlayer","menu button clicked");
+            resetButton = (Button)myActivity.findViewById(R.id.resetButton);
+            aiSeekBar = (SeekBar)myActivity.findViewById(R.id.aiDelaySeekBar);
+            backButton = (Button)myActivity.findViewById(R.id.backButton);
+            dumbButton = (Button)myActivity.findViewById(R.id.dumbButton);
+            smartButton = (Button)myActivity.findViewById(R.id.smartButton);
+            dumbButton.setOnClickListener(this);
+            smartButton.setOnClickListener(this);
+            resetButton.setOnClickListener(this);
+            aiSeekBar.setOnSeekBarChangeListener(this);
+            backButton.setOnClickListener(this);
+            aiSeekBar.setMax(2000);
+            aiSeekBar.setProgress(os.getDelay());
+
+            //Log.i("HumanPlayer","menu button clicked");
+        }
+        else if (v.getId() == R.id.resetButton){
+            game.sendAction(new OthelloResetGameAction(this));
+            initializeViews();
+            game.sendAction(new OthelloChangeAIDelayAction(this, os.getDelay()));
+        }
+        else if (v.getId() == R.id.backButton){
+            //reset to te regular board
+            initializeViews();
+            game.sendAction(new OthelloChangeAIDelayAction(this, os.getDelay()));
+        }
+        else if (v.getId() == R.id.smartButton){
+            //who knows why this works with 3 but not one
+            game.sendAction(new OthelloChangeAITypeAction(this, 1));
+            game.sendAction(new OthelloChangeAITypeAction(this, 1));
+            game.sendAction(new OthelloChangeAITypeAction(this, 1));
+        }
+        else if (v.getId() == R.id.dumbButton){
+            game.sendAction(new OthelloChangeAITypeAction(this, 0));
+            game.sendAction(new OthelloChangeAITypeAction(this, 0));
+            game.sendAction(new OthelloChangeAITypeAction(this, 0));
         }
     }
 
@@ -255,6 +304,19 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
         return color;
     }
 
+    //seek bar stuff
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        if (seekBar.getId() == R.id.aiDelaySeekBar){
+            game.sendAction(new OthelloChangeAIDelayAction(this, progress));
+        }
+    }
 
+    public void onStartTrackingTouch(SeekBar seekBar) {
+        //don't care
+    }
+
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        //don't care
+    }
 
 }
