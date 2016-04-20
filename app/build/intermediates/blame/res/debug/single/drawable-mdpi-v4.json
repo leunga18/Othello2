@@ -8,8 +8,16 @@
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
     },
     {
+        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
+        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+    },
+    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",

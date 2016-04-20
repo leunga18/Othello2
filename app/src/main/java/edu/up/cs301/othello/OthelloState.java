@@ -72,14 +72,14 @@ public class OthelloState extends GameState implements Serializable{
     public OthelloState(OthelloState o){
         this.aiTypeChanged = o.isAiTypeChanged();
         this.aiType = o.getAiType();
-        this.delay = o.delay;
+        this.delay = o.getDelay();
         this.turn = o.whoseTurn();
         this.whiteCount = o.getWhiteCount();
         this.blackCount = o.getBlackCount();
         this.board = new int[8][8];
         this.preBoard = new int[8][8];
         this.justFlipped = new boolean[8][8];
-        this.madeMove = o.madeMove;
+        this.madeMove = o.isMoveMade();
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
                 this.board[i][j] = o.getBoard()[i][j];
@@ -153,6 +153,8 @@ public class OthelloState extends GameState implements Serializable{
     public void setAiTypeChanged(boolean aiTypeChanged) {
         this.aiTypeChanged = aiTypeChanged;
     }
+
+    public boolean isMoveMade(){return madeMove;}
 
 
     public int getAiType() {

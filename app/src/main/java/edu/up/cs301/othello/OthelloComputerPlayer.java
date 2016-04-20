@@ -71,11 +71,10 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
                 AIType = os.getAiType();
             }
 
-            if (os.whoseTurn() == playerNum && !hasMoved) {
+            if (os.whoseTurn() == playerNum) {
                 //make a move
                 makeMove(os);
                 game.sendAction(new OthelloChangeTurnAction(this));
-                hasMoved = false;
             }
         }
         if (info instanceof NotYourTurnInfo){
