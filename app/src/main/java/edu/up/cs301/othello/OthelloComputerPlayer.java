@@ -56,6 +56,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
     public OthelloComputerPlayer(String name, int type) {
         super(name);
         this.AIType = type;
+        hasMoved = false;
         firstRun = true;
     }
 
