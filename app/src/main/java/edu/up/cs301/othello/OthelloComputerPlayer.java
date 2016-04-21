@@ -27,8 +27,8 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
     private int AIDelay = 0;
     protected OthelloState os;
     protected int AIType;
-    protected boolean hasMoved = false;
-    protected boolean firstRun = true;
+    protected int prevTurn;
+    boolean firstRun;
 
     /*
      * getters and setters self explanatory
@@ -56,7 +56,6 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
     public OthelloComputerPlayer(String name, int type) {
         super(name);
         this.AIType = type;
-        hasMoved = false;
         firstRun = true;
     }
 
@@ -66,19 +65,26 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
         if (info instanceof OthelloState) {
             os = (OthelloState) info;
             AIDelay = os.getDelay();
-
+            if (firstRun){
+                if (os.whoseTurn() == playerNum) {
+                    //make a move
+                    makeMove(os);
+                    game.sendAction(new OthelloChangeTurnAction(this));
+                    firstRun = false;
+                }
+            }
             if (os.isAiTypeChanged()){
                 AIType = os.getAiType();
             }
-
-            if (os.whoseTurn() == playerNum) {
+            if (os.whoseTurn() == playerNum && os.whoseTurn() != prevTurn) {
                 //make a move
                 makeMove(os);
                 game.sendAction(new OthelloChangeTurnAction(this));
             }
+            prevTurn = os.whoseTurn();
         }
         if (info instanceof NotYourTurnInfo){
-            //Log.i("ComputerPlayer", "played out of turn");
+            Log.i("ComputerPlayer", "played out of turn");
         }
     }
 
@@ -89,13 +95,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
      */
     public boolean makeMove(OthelloState state){
         //Temporarily delay the AI's response
-        hasMoved = true;
-        try {
-            Thread.sleep(AIDelay);
-        }
-        catch (InterruptedException e) {
-            //do nothing
-        }
+        
         //stores "best move" data
         int xTarget = -1;
         int yTarget = -1;
@@ -103,7 +103,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
         //stores testing Variable
         int testScore = 0;
         int spotsSeen = 0;
-        int ranNum = (int) (Math.random() * 10000);
+        int ranNum = (int)(Math.random() * 10000);
         //iterates through all possible moves
         for(int i = 0; i < 8; i++){
             for(int j = 0; j < 8; j++){
@@ -112,7 +112,6 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
                     //AI is dumb (random)
                     if (AIType == 0) {
                         spotsSeen++;
-                        ranNum = (int) (Math.random() * 10000);
                         if (ranNum < (10000 / spotsSeen)) {
                             xTarget = i;
                             yTarget = j;
@@ -139,15 +138,23 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
                 }
             }
         }
+        try {
+            Thread.sleep(AIDelay);
+        }
+        catch (InterruptedException e) {
+            //do nothing
+        }
         //if a move could be made, actually make the move
         if(maxScore > 0){
             //state.placePiece(xTarget, yTarget, getColor(), true);
             //state.finalizeBoard();
+            Log.i("ComputerPlayer", "Moved at location " + xTarget + "," + yTarget);
             game.sendAction(new OthelloPlacePieceAction(this, xTarget, yTarget, getColor()));
             game.sendAction(new OthelloConfirmAction(this));
             return true;
         }
         //no move could be made, so pass
+        Log.i("ComputerPlayer", "Passed");
         game.sendAction(new OthelloPassAction(this));
         return false;
     }

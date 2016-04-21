@@ -24,12 +24,12 @@
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
-    },
-    {
         "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",

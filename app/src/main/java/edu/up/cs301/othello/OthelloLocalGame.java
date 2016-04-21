@@ -77,7 +77,7 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
             OthelloPlacePieceAction place = (OthelloPlacePieceAction) action;
             if (canMove(getPlayerIdx(place.getPlayer()))) {
                 os.placePiece(place.getX(), place.getY(), place.getColor(), true);
-                //Log.i("LocalGame", "" + place.getColor() + " placed at " + place.getX() + ", " + place.getY() + "");
+                Log.i("LocalGame", "" + place.getColor() + " placed at " + place.getX() + ", " + place.getY() + "");
                 place.getPlayer().sendInfo(new OthelloState(os));
                 return true;
             } else {

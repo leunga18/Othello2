@@ -96,7 +96,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
             this.os = (OthelloState)info;
             if (os.whoseTurn() == playerNum){
                 //if a move hasn't been made, change the confirm button to be greyed out
-                if (hasNotMoved){
+                if (hasNotMoved && os.isPassNeeded(getColor())){
                     confirmButton.setBackgroundResource(R.drawable.confirm_grey);
                 }
                 //change the confirm button to pass button
