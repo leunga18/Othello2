@@ -6,7 +6,14 @@ import edu.up.cs301.game.GamePlayer;
 import edu.up.cs301.game.actionMsg.GameAction;
 
 /**
- * Created by losh18 on 3/31/2016.
+ * A AI delay change action that an Othello human player sends to the game to change the delay of the AI.
+ *
+ * @author Aaron Leung
+ * @author Kieran Losh,
+ * @author Austin Moehnke
+ * @author Ryan Kane
+ *
+ * @date 3/31/2016
  */
 public class OthelloChangeAIDelayAction extends GameAction implements Serializable{
     private static final long serialVersionUID = 12304182016l;

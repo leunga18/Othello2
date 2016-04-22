@@ -5,8 +5,14 @@ import java.io.Serializable;
 import edu.up.cs301.game.infoMsg.GameState;
 
 /**
- * @author Aaron Leung, Kieran Losh, Aaron Moehnke, Ryan Kane on 3/3/2016.
- * @version 3/14/2016
+ * Contains the state of an Othello game.
+ *
+ * @author Aaron Leung
+ * @author Kieran Losh,
+ * @author Austin Moehnke
+ * @author Ryan Kane
+ *
+ * @date 3/31/2016
  */
 public class OthelloState extends GameState implements Serializable{
     private static final long serialVersionUID = 1004182016l;
@@ -178,7 +184,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * saves the board array to preBoard
      */
     private void saveBoard(){
@@ -190,7 +195,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * loads the preBoard to the board
      */
     private void loadBoard(){
@@ -210,7 +214,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * Places a piece at the coordinates if it is within the board bounds and the board exists
      * @param x x cord of the piece
      * @param y y cord of the piece
@@ -258,7 +261,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * Checks the num of pieces that need to be flipped upon piece placement
      * @param x x coordinate of placed piece
      * @param y y coordinate of placed piece
@@ -288,7 +290,6 @@ public class OthelloState extends GameState implements Serializable{
 
 
     /**
-     * Ryan Kane
      * checks and flips all pieces in a given row
      * @param x x coordinate of placed piece
      * @param y y coordinate of placed piece
@@ -342,7 +343,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * Will tell the requester if the game needs to be ended or turn skipped
      * 0 = no problems, inputted player can make a move
      * 1 = should skip turn
@@ -379,7 +379,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * Support method for isPassNeeded
      * @param playerColor
      * @return if given playerColor can make a move
@@ -400,7 +399,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * @param origColor: BLACK or WHITE
      * @return the opposite color of the given color
      */
@@ -426,7 +424,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * Support method for updatePiece count
      * Returns the number of pieces of the color given in the parameter
      * @param color Color of piece that needs to be counted
@@ -445,7 +442,6 @@ public class OthelloState extends GameState implements Serializable{
     }
 
     /**
-     * Ryan Kane
      * test method "forces" a piece into a location without changing any other piece on the board
      * @param x x coordinate of placed piece
      * @param y y coordinate of placed piece

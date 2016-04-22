@@ -11,7 +11,7 @@ import edu.up.cs301.game.infoMsg.GameInfo;
 import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 
 /**
- * Computer player for Othello Game
+ * Computer player for Othello Game.
  *
  * @author Aaron Leung
  * @author Ryan Kane

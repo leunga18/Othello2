@@ -6,7 +6,14 @@ import edu.up.cs301.game.GamePlayer;
 import edu.up.cs301.game.actionMsg.GameAction;
 
 /**
- * Created by losh18 on 3/31/2016.
+ * A game-place-piece action that an Othello player sends to the game to place a piece on the board.
+ *
+ * @author Aaron Leung
+ * @author Kieran Losh,
+ * @author Austin Moehnke
+ * @author Ryan Kane
+ *
+ * @date 3/31/2016
  */
 public class OthelloPlacePieceAction extends GameAction implements Serializable{
     private static final long serialVersionUID = 904182016l;

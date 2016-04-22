@@ -6,7 +6,15 @@ import edu.up.cs301.game.GamePlayer;
 import edu.up.cs301.game.actionMsg.GameAction;
 
 /**
- * Created by losh18 on 3/31/2016.
+ * A change AI type action that a human player sends to the game to change the AI type from
+ * dumb to smart, or vice versa.
+ *
+ * @author Aaron Leung
+ * @author Kieran Losh,
+ * @author Austin Moehnke
+ * @author Ryan Kane
+ *
+ * @date 3/31/2016
  */
 public class OthelloChangeAITypeAction extends GameAction implements Serializable{
     private static final long serialVersionUID = 22304182016l;

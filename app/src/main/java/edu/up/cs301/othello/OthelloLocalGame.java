@@ -10,7 +10,14 @@ import edu.up.cs301.game.actionMsg.GameAction;
 import edu.up.cs301.game.infoMsg.NotYourTurnInfo;
 
 /**
- * Created by losh18 on 3/31/2016.
+ * The OthelloLocalGame class for an Othello game.
+ *
+ * @author Aaron Leung
+ * @author Kieran Losh,
+ * @author Austin Moehnke
+ * @author Ryan Kane
+ *
+ * @date 3/31/2016
  */
 public class OthelloLocalGame extends LocalGame implements Serializable {
     private static final long serialVersionUID = 604182016l;

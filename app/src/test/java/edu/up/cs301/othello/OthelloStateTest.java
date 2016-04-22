@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 /**
  * @author Aaron Leung, Kieran Losh, Aaron Moehnke, Ryan Kane on 3/3/2016.
- * @version 3/14/2016
+ * @version 4/22/2016
  */
 public class OthelloStateTest {
 

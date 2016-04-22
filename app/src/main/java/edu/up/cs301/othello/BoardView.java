@@ -10,13 +10,15 @@ import android.view.SurfaceView;
 import java.io.Serializable;
 
 /**
+ * Custom surfaceView class designed to act as the board in othello. The board has an array of pieces,
+ * and draws them on its canvas. The board handles touch inputs and the presses of the confirm button.
+ *
  * @author Aaron Leung
  * @author Ryan Kane
  * @author Austin Moehnke
  * @author Kieran Losh
  *
- * Custom surfaceView class designed to act as the board in othello. The board has an array of pieces,
- * and draws them on its canvas. The board handles touch inputs and the presses of the confirm button.
+ * @date 3/30/16
  *
  */
 public class BoardView extends SurfaceView implements Serializable{

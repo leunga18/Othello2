@@ -246,9 +246,6 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                  *  Resource:
                  *      http://stackoverflow.com/questions/11737607/how-to-set-the-image-from-drawable-dynamically-in-android
                  *  Solution: Set the background image again after the flash happens.
-                 *
-                 *
-                 * @TODO correct citation
                  */
                 flash(0xFFFF0000, 100);
             }

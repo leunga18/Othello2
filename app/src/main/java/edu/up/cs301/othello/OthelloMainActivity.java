@@ -12,7 +12,14 @@ import edu.up.cs301.game.config.GameConfig;
 import edu.up.cs301.game.config.GamePlayerType;
 
 /**
- * Created by losh18 on 3/31/2016.
+ * This is the primary activity for the Othello game
+ *
+ * @author Aaron Leung
+ * @author Kieran Losh,
+ * @author Austin Moehnke
+ * @author Ryan Kane
+ *
+ * @date 3/31/2016
  */
 public class OthelloMainActivity extends GameMainActivity implements Serializable{
     private static final long serialVersionUID = 704182016l;
