@@ -12,24 +12,24 @@
         "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\lose_landscape.png"
     },
     {
-        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lose_potrait.png",
-        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\lose_potrait.png"
-    },
-    {
         "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blank.png",
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\blank.png"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lose_potrait.png",
+        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\lose_potrait.png"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_landscape.png",
         "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\confirm_landscape.png"
     },
     {
-        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\turn_waiting.png",
-        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\turn_waiting.png"
-    },
-    {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.png",
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\turn_waiting.png",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\turn_waiting.png"
     },
     {
         "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_black_button.png",
@@ -48,16 +48,16 @@
         "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\board.jpg"
     },
     {
-        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_white_button.png",
-        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\othello_white_button.png"
+        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
+        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm.png"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_white_button.png",
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\drawable\\othello_white_button.png"
     },
     {
-        "merged": "P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
-        "source": "P:\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm.png"
+        "merged": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\othello_white_button.png",
+        "source": "C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\drawable\\othello_white_button.png"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_upside_down.png",
@@ -116,12 +116,12 @@
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\menu.png"
     },
     {
-        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_background.png",
-        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\menu_background.png"
-    },
-    {
         "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_upside_down.png",
         "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\confirm_upside_down.png"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_background.png",
+        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\menu_background.png"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pass_button.png",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\drawable\\turn_white.png"
     },
     {
-        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
-        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\confirm.png"
-    },
-    {
         "merged": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm_upside_down.png",
         "source": "P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\drawable\\confirm_upside_down.png"
+    },
+    {
+        "merged": "C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\confirm.png",
+        "source": "C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\drawable\\confirm.png"
     },
     {
         "merged": "C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\quit_button.png",
