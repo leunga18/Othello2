@@ -34,6 +34,7 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
 
     @Override
     protected String checkIfGameOver() {
+        //TODO
         int color;
         if (os.whoseTurn() == 1){
             color = OthelloState.WHITE;
@@ -47,19 +48,33 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
                 //game is proceeding normally
                 return null;
             case 2:
+                //TODO
                 //first player won
-                return "" + playerNames[0] + " won!";
+                //return "" + playerNames[0] + " won!";
+                os.setGameEnd("" + playerNames[0] + " won!");
+                sendAllUpdatedState();
+                break;
             case 3:
+                //TODO
                 //2nd player won
-                return "" + playerNames[1] + " won!";
+                //return "" + playerNames[1] + " won!";
+                os.setGameEnd("" + playerNames[1] + " won!");
+                sendAllUpdatedState();
+                break;
             case 4:
+                //TODO
                 //tie
-                return "Tie!";
+                //return "Tie!";
+                os.setGameEnd("Tie!");
+                sendAllUpdatedState();
+                break;
             default:
                 //we don't care
         }
+
         return null;
     }
+
 
     @Override
     protected boolean makeMove(GameAction action) {

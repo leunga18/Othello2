@@ -110,6 +110,7 @@ public class OthelloHumanPlayer extends GameHumanPlayer implements View.OnTouchL
                 }
             }
             board.setPieces(os.getBoard());
+            board.setGameEnd(os.getGameEnd());
             color = getColor();
             board.invalidate();
             os.updatePiecesCount();

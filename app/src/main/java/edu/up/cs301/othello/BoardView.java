@@ -23,6 +23,7 @@ public class BoardView extends SurfaceView implements Serializable{
 
     protected int pieces[][];
     private static final long serialVersionUID = 104182016l;
+    private String gameEnd = "";
 
     /**
      * Constructors
@@ -113,6 +114,13 @@ public class BoardView extends SurfaceView implements Serializable{
             }
         }
 
+        //Draw End Game Mesage TODO
+        Paint redPaint = new Paint();
+        redPaint.setColor(Color.RED);
+        redPaint.setStyle(Paint.Style.FILL);
+        redPaint.setTextSize(100);
+        canvas.drawText(gameEnd, width/2, height/2, redPaint);
+
 
     }
 
@@ -125,6 +133,10 @@ public class BoardView extends SurfaceView implements Serializable{
 
     public void setPieces(int[][] pieces) {
         this.pieces = pieces;
+    }
+
+    public void setGameEnd(String gameEnd) {
+        this.gameEnd = gameEnd;
     }
 }
 

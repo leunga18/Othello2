@@ -78,7 +78,7 @@
                 android:textColor="#FFFFFFFF"
                 android:textSize="56dp"
                 android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="15dp" />
 
         </LinearLayout>
     </FrameLayout>

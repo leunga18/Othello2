@@ -19,8 +19,8 @@ public class OthelloState extends GameState implements Serializable{
     private int blackCount = 2;
     private int[][] board = null;
     private int[][] preBoard = null;
-    private boolean[][] justFlipped = null;
     private boolean madeMove = false;
+    private String gameEnd = "";
 
     //if turn == 1 White player turn
     //if turn == 0 Black player turn
@@ -33,6 +33,7 @@ public class OthelloState extends GameState implements Serializable{
      * Constructor
      */
     public OthelloState(){
+        gameEnd = "";
         aiTypeChanged = false;
         aiType = 0;
         delay = 500;
@@ -41,7 +42,6 @@ public class OthelloState extends GameState implements Serializable{
         blackCount = 2;
         board = new int[8][8];
         preBoard = new int[8][8];
-        justFlipped = new boolean[8][8];
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
                 board[i][j] = EMPTY;
@@ -50,11 +50,6 @@ public class OthelloState extends GameState implements Serializable{
         for (int i = 0; i < preBoard.length; i++){
             for (int j = 0; j < preBoard[i].length; j++){
                 preBoard[i][j] = EMPTY;
-            }
-        }
-        for (int i = 0; i < justFlipped.length; i++){
-            for (int j = 0; j < justFlipped[i].length; j++){
-                justFlipped[i][j] = false;
             }
         }
         //starting layout
@@ -70,6 +65,7 @@ public class OthelloState extends GameState implements Serializable{
      * @param o OthelloState to copy from
      */
     public OthelloState(OthelloState o){
+        this.gameEnd = o.gameEnd;
         this.aiTypeChanged = o.isAiTypeChanged();
         this.aiType = o.getAiType();
         this.delay = o.getDelay();
@@ -78,7 +74,6 @@ public class OthelloState extends GameState implements Serializable{
         this.blackCount = o.getBlackCount();
         this.board = new int[8][8];
         this.preBoard = new int[8][8];
-        this.justFlipped = new boolean[8][8];
         this.madeMove = o.isMoveMade();
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
@@ -88,11 +83,6 @@ public class OthelloState extends GameState implements Serializable{
         for (int i = 0; i < preBoard.length; i++){
             for (int j = 0; j < preBoard[i].length; j++){
                 this.preBoard[i][j] = o.getPreBoard()[i][j];
-            }
-        }
-        for (int i = 0; i < justFlipped.length; i++){
-            for (int j = 0; j < justFlipped[i].length; j++){
-                this.justFlipped[i][j] = o.getJustFlipped()[i][j];
             }
         }
     }
@@ -106,16 +96,20 @@ public class OthelloState extends GameState implements Serializable{
         this.turn = turn;
     }
 
+    public String getGameEnd() {
+        return gameEnd;
+    }
+
+    public void setGameEnd(String gameEnd) {
+        this.gameEnd = gameEnd;
+    }
+
     public int[][] getBoard() {
         return board;
     }
 
     public int[][] getPreBoard(){
         return preBoard;
-    }
-
-    public boolean[][] getJustFlipped(){
-        return justFlipped;
     }
 
     public void setBoard(int[][] board) {
@@ -181,16 +175,6 @@ public class OthelloState extends GameState implements Serializable{
             return -1;
         }
         return board[x][y];
-    }
-
-    /**
-     * Give coordinates and if the piece was flipped return true
-     * @param x x coordinate
-     * @param y y coordinate
-     * @return if the piece was flipped this turn
-     */
-    public boolean getJustFlipped(int x, int y){
-        return justFlipped[x][y];
     }
 
     /**
@@ -268,7 +252,6 @@ public class OthelloState extends GameState implements Serializable{
         int temp = checkFlipPieces(x, y, pieceColor,wantflip);
         //this will flip the first piece if this is not a test
         if(wantflip == true){
-            justFlipped[x][y] = true;
             board[x][y] = pieceColor;
         }
         return temp;
@@ -342,7 +325,6 @@ public class OthelloState extends GameState implements Serializable{
             }
             if (piecesFlipped == 0){
                 if(wantflip == true){
-                    justFlipped[x][y]= true;
                     board[x][y] = origColor;
                 }
                 return 1;
@@ -350,7 +332,6 @@ public class OthelloState extends GameState implements Serializable{
             //a piece will be flipped
             else{
                 if(wantflip == true){
-                    justFlipped[x][y]= true;
                     board[x][y] = origColor;
                 }
                 return ++piecesFlipped;
@@ -461,18 +442,6 @@ public class OthelloState extends GameState implements Serializable{
             }
         }
         return total;
-    }
-
-    /**
-     * sets the whole array of booleans to false
-     * Makes it so no pieces are in the justFlipped state
-     */
-    public void resetJustFlipped(){
-        for (int i = 0; i < justFlipped.length; i++){
-            for (int j = 0; j < justFlipped[i].length; j++){
-                justFlipped[i][j] = false;
-            }
-        }
     }
 
     /**
