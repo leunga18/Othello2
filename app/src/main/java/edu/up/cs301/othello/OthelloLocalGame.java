@@ -41,7 +41,6 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
 
     @Override
     protected String checkIfGameOver() {
-        //TODO
         int color;
         if (os.whoseTurn() == 1){
             color = OthelloState.WHITE;
@@ -53,28 +52,23 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
         switch(status){
             case 0:
                 //game is proceeding normally
+                os.setGameEnd(null);
                 return null;
             case 2:
-                //TODO
                 //first player won
-                //return "" + playerNames[0] + " won!";
-                os.setGameEnd("" + playerNames[0] + " won!");
+                os.setGameEnd("2");
                 sendAllUpdatedState();
-                break;
+                return "" + playerNames[0] + " won!";
             case 3:
-                //TODO
                 //2nd player won
-                //return "" + playerNames[1] + " won!";
-                os.setGameEnd("" + playerNames[1] + " won!");
+                os.setGameEnd("3");
                 sendAllUpdatedState();
-                break;
+                return "" + playerNames[1] + " won!";
             case 4:
-                //TODO
                 //tie
-                //return "Tie!";
-                os.setGameEnd("Tie!");
+                os.setGameEnd("4");
                 sendAllUpdatedState();
-                break;
+                return "Tie!";
             default:
                 //we don't care
         }
@@ -85,7 +79,6 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
 
     @Override
     protected boolean makeMove(GameAction action) {
-        //Log.i("action", action.getClass().toString());
         if (action instanceof OthelloPassAction) {
             //check if correct player
             if (canMove(os.whoseTurn())) {
@@ -99,34 +92,32 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
             OthelloPlacePieceAction place = (OthelloPlacePieceAction) action;
             if (canMove(getPlayerIdx(place.getPlayer()))) {
                 os.placePiece(place.getX(), place.getY(), place.getColor(), true);
-                Log.i("LocalGame", "" + place.getColor() + " placed at " + place.getX() + ", " + place.getY() + "");
                 place.getPlayer().sendInfo(new OthelloState(os));
                 return true;
             } else {
                 place.getPlayer().sendInfo(new NotYourTurnInfo());
             }
             //place piece
-        }
+        }//confirm button is pressed
         else if (action instanceof OthelloConfirmAction){
             os.finalizeBoard();
             sendAllUpdatedState();
-        }
+        }//change the turn
         else if (action instanceof OthelloChangeTurnAction){
             changeTurn();
             sendAllUpdatedState();
-        }
+        } //set AI delay
         else if (action instanceof OthelloChangeAIDelayAction)
         {
             os.setDelay(((OthelloChangeAIDelayAction) action).getDelay());
             sendAllUpdatedState();
-        }
+        } //Changes AI type
         else if (action instanceof OthelloChangeAITypeAction){
-            // Log.i("LocalGame", "Action ai type: " + ((OthelloChangeAITypeAction) action).getType() + " OS AI type: " + os.getAiType());
             os.setAiType(((OthelloChangeAITypeAction) action).getType());
             os.setAiTypeChanged(true);
             sendAllUpdatedState();
             os.setAiTypeChanged(false);
-        }
+        }//Reset the game
         else if (action instanceof OthelloResetGameAction){
             os = new OthelloState();
             sendAllUpdatedState();
@@ -137,14 +128,12 @@ public class OthelloLocalGame extends LocalGame implements Serializable {
 
     //changes turn
     public void changeTurn(){
-        //Log.i("LocalGame", "Current Turn: " + os.whoseTurn());
         if (os.whoseTurn() == 0){
             os.setTurn(1);
         }
         else if (os.whoseTurn() == 1){
             os.setTurn(0);
         }
-        //Log.i("LocalGame", "Next Turn: " + os.whoseTurn());
     }
 
 }

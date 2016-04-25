@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
+        "outputFile": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/values-v11/styles.xml",
+                    "file": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "outputFile": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -35,7 +35,7 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "outputFile": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -59,7 +59,7 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -72,7 +72,7 @@
         ]
     },
     {
-        "outputFile": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -83,31 +83,7 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 17,
-                        "endColumn": 63,
-                        "endOffset": 76
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 62,
-                    "endOffset": 113
-                },
-                "from": {
-                    "file": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -120,7 +96,7 @@
         ]
     },
     {
-        "outputFile": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -131,7 +107,55 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 63,
+                        "endOffset": 76
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 62,
+                    "endOffset": 113
+                },
+                "from": {
+                    "file": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endColumn": 63,
+                        "endOffset": 78
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 62,
+                    "endOffset": 113
+                },
+                "from": {
+                    "file": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

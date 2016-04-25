@@ -84,7 +84,7 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
             prevTurn = os.whoseTurn();
         }
         if (info instanceof NotYourTurnInfo){
-            Log.i("ComputerPlayer", "played out of turn");
+            //computer played out of turn somehow, do nothing
         }
     }
 
@@ -148,13 +148,11 @@ public class OthelloComputerPlayer extends GameComputerPlayer implements Seriali
         if(maxScore > 0){
             //state.placePiece(xTarget, yTarget, getColor(), true);
             //state.finalizeBoard();
-            Log.i("ComputerPlayer", "Moved at location " + xTarget + "," + yTarget);
             game.sendAction(new OthelloPlacePieceAction(this, xTarget, yTarget, getColor()));
             game.sendAction(new OthelloConfirmAction(this));
             return true;
         }
         //no move could be made, so pass
-        Log.i("ComputerPlayer", "Passed");
         game.sendAction(new OthelloPassAction(this));
         return false;
     }

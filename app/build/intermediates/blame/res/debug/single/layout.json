@@ -1,234 +1,274 @@
 [
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/game_remote_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/game_remote_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_no_gui.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/game_no_gui.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/game_no_gui.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/menu.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/menu.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/game_player_list_row.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/game_player_list_row.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_config_main.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\othello_layout.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\menu.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/othello_layout.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/othello_layout.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/game_config_tabhost.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/game_config_tabhost.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\counter_human_player.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\menu.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/game_local_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/game_local_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/counter_human_player.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/counter_human_player.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_no_gui.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_config_main.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_config_main.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/othello_layout_flipped.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/othello_layout_flipped.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\othello_layout.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_local_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_tabhost.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_config_tabhost.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_local_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\menu.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout_flipped.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout_flipped.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/build/intermediates/res/merged/debug/layout/game_config_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/app/src/main/res/layout/game_config_main.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\counter_human_player.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\counter_human_player.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\Ryan\\AndroidStudioProjects\\othello\\app\\src\\main\\res\\layout\\counter_human_player.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\othello_layout.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\othello_layout.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_player_list_row.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_player_list_row.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\menu.xml"
     },
     {
-        "merged": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
-        "source": "/Users/AaronLeung/Documents/University of Portland/2015-2016/Spring/CS301/Othello2/C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\Kieran\\Documents\\Homework\\Spring 2016\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_config_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\P:\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_no_gui.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_no_gui.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_local_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\app\\src\\main\\res\\layout\\game_local_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_config_main.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_config_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello2\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_remote_tab.xml",
+        "source": "C:\\Users\\AaronLeung\\Documents\\University of Portland\\2015-2016\\Spring\\CS301\\Othello2\\C:\\Users\\losh18\\Othello\\app\\src\\main\\res\\layout\\game_remote_tab.xml"
     }
 ]

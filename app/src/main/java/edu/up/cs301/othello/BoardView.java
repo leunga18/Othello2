@@ -1,13 +1,18 @@
 package edu.up.cs301.othello;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
 import java.io.Serializable;
+
+import edu.up.cs301.game.R;
 
 /**
  * Custom surfaceView class designed to act as the board in othello. The board has an array of pieces,
@@ -25,7 +30,7 @@ public class BoardView extends SurfaceView implements Serializable{
 
     protected int pieces[][];
     private static final long serialVersionUID = 104182016l;
-    private String gameEnd = "";
+    private int gameEnd = 0;
 
     /**
      * Constructors
@@ -60,16 +65,17 @@ public class BoardView extends SurfaceView implements Serializable{
      *  This must be done before drawing
      */
     private void initPieces(){
-
+        gameEnd = -1;
         pieces = new int[8][8];
-
         for (int i = 0; i < 8; i++){
             for (int j = 0; j < 8; j++){
-                pieces[i][j] = 0;
+                pieces[i][j] = OthelloState.EMPTY;
             }
-
         }
-
+        //generate bitmap objects for end game drawables
+//        wonImage = BitmapFactory.decodeResource(getResources(), R.drawable.win_landscape_small);
+//        lostImage = BitmapFactory.decodeResource(getResources(), R.drawable.lost_small);
+//        tiedImage = BitmapFactory.decodeResource(getResources(), R.drawable.win_landscape_small);
     }
 
     @Override
@@ -98,7 +104,6 @@ public class BoardView extends SurfaceView implements Serializable{
 
         //Draw the pieces. Uses array indices to offset the pieces,
         // size is determined based on view dimensions
-        //@// TODO: 2/1/2016 Replace hard-coded padding values with variable
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 int current = pieces[i][j];
@@ -115,15 +120,17 @@ public class BoardView extends SurfaceView implements Serializable{
 
             }
         }
-
-        //Draw End Game Mesage TODO
-        Paint redPaint = new Paint();
-        redPaint.setColor(Color.RED);
-        redPaint.setStyle(Paint.Style.FILL);
-        redPaint.setTextSize(100);
-        canvas.drawText(gameEnd, width/2, height/2, redPaint);
-
-
+        //Clear board for end game (this didn't end up getting used)
+        /**
+         * External Citation
+         * Date: 4/24/2016
+         * Problem: We need to clear the board when the game is over to display the end game message
+         * Resource: https://stackoverflow.com/questions/5729377/android-canvas-how-do-i-clear-delete-contents-of-a-canvas-bitmaps-livin
+         * Solution: Set color of canvas to transparent with a clear mode
+         */
+        if (gameEnd == 1){ //clear board so that only the background shows
+            canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
+        }
     }
 
 
@@ -137,7 +144,7 @@ public class BoardView extends SurfaceView implements Serializable{
         this.pieces = pieces;
     }
 
-    public void setGameEnd(String gameEnd) {
+    public void setGameEnd(int gameEnd) {
         this.gameEnd = gameEnd;
     }
 }
